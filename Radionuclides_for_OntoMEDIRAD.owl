@@ -1,0 +1,1610 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#"
+     xml:base="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl"
+     xmlns:uo_for_ontospm="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoSPM.owl#"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ontomedirad1="http://medicis.univ-rennes1.fr/ontologies/ontospm/ontomedirad.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:umls="http://bioportal.bioontology.org/ontologies/umls/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:bfo="http://purl.obolibrary.org/obo/bfo/2014-05-03/bfo.owl#"
+     xmlns:ontomedirad="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl">
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/CHEBI_for_OntoMEDIRAD.owl"/>
+	</owl:Ontology>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#DICOM-CSD -->
+
+    <owl:AnnotationProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#DICOM-CSD"/>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#DICOM-code-meaning -->
+
+    <owl:AnnotationProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#DICOM-code-meaning"/>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#DICOM-code-value -->
+
+    <owl:AnnotationProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#DICOM-code-value"/>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#DICOM-old-SRT-code -->
+
+    <owl:AnnotationProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#DICOM-old-SRT-code"/>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_MIME_type -->
+
+    <owl:AnnotationProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_MIME_type"/>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#snomed-SCTID -->
+
+    <owl:AnnotationProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#snomed-SCTID"/>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#DICOM-CSD -->
+
+    <owl:AnnotationProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#DICOM-CSD"/>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#DICOM-code-meaning -->
+
+    <owl:AnnotationProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#DICOM-code-meaning"/>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#DICOM-code-value -->
+
+    <owl:AnnotationProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#DICOM-code-value"/>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#DICOM-old-SRT-code -->
+
+    <owl:AnnotationProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#DICOM-old-SRT-code"/>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#snomed-SCTID -->
+
+    <owl:AnnotationProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#snomed-SCTID"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#arsenic_72_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#arsenic_72_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27563"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^72^Arsenic</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2705002</DICOM-code-value>
+        <DICOM-old-SRT-code>C-115A2</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2705002</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Arsenic-72 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Arsenic-72 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#barium_133_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#barium_133_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32594"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^133^Barium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3027009</DICOM-code-value>
+        <DICOM-old-SRT-code>C-122A5</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3027009</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Barium-133 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Barium-133 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#bromine_75_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#bromine_75_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22927"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^75^Bromine</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17910003</DICOM-code-value>
+        <DICOM-old-SRT-code>C-113A1</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17910003</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Bromine-75 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Bromine-75 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#bromine_76_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#bromine_76_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22927"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^76^Bromine</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79523006</DICOM-code-value>
+        <DICOM-old-SRT-code>C-113A2</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79523006</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Bromine-76 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Bromine-76 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#bromine_77_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#bromine_77_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22927"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^77^Bromine</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">86521004</DICOM-code-value>
+        <DICOM-old-SRT-code>C-113A3</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">86521004</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Bromine-77 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Bromine-77 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#carbon_11_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#carbon_11_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^11^Carbon</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40565003</DICOM-code-value>
+        <DICOM-old-SRT-code>C-105A1</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40565003</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Carbon-11 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Carbon-11 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#carbon_14_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#carbon_14_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^14^Carbon</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71647005</DICOM-code-value>
+        <DICOM-old-SRT-code>C-105A2</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71647005</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Carbon-14 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Carbon-14 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#chromium_51_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#chromium_51_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28073"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^51^Chromium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52745005</DICOM-code-value>
+        <DICOM-old-SRT-code>C-129A2</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52745005</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Chromium-51 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Chromium-51 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#cobalt_57_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#cobalt_57_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27638"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^57^Cobalt</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27054007</DICOM-code-value>
+        <DICOM-old-SRT-code>C-144A3</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27054007</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Cobalt-57 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Cobalt-57 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#cobalt_58_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#cobalt_58_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27638"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^58^Cobalt</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89272005</DICOM-code-value>
+        <DICOM-old-SRT-code>C-144A4</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89272005</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Cobalt-58 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Cobalt-58 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#cobalt_60_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#cobalt_60_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27638"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^60^Cobalt</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5405008</DICOM-code-value>
+        <DICOM-old-SRT-code>C-144A6</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5405008</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Cobalt-60 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Cobalt-60 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#copper_60_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#copper_60_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28694"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^60^Copper</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">425364008</DICOM-code-value>
+        <DICOM-old-SRT-code>C-127A4</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">425364008</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Copper-60 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Copper-60 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#copper_61_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#copper_61_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28694"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^61^Copper</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71425003</DICOM-code-value>
+        <DICOM-old-SRT-code>C-127A1</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71425003</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Copper-61 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Copper-61 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#copper_62_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#copper_62_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28694"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^62^Copper</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">422934004</DICOM-code-value>
+        <DICOM-old-SRT-code>C-127A5</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">422934004</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Copper-62 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Copper-62 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#copper_64_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#copper_64_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28694"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^64^Copper</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3932008</DICOM-code-value>
+        <DICOM-old-SRT-code>C-127A2</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3932008</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Copper-64 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Copper-64 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#copper_67_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#copper_67_atom">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28694"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^67^Copper</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53700003</DICOM-code-value>
+        <DICOM-old-SRT-code>C-127A3</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53700003</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Copper-67 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Copper-67 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#fluorine_18_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#fluorine_18_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24061"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^18^Fluorine</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77004003</DICOM-code-value>
+        <DICOM-old-SRT-code>C-111A1</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77004003</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Fluorine-18 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Fluorine-18 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#gadolinium_153_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#gadolinium_153_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33375"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^153^Gadolinium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14529005</DICOM-code-value>
+        <DICOM-old-SRT-code>C-178A8</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14529005</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Gadolinium-153 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Gadolinium-153 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#gallium_66_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#gallium_66_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49631"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^66^Gallium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79477007</DICOM-code-value>
+        <DICOM-old-SRT-code>C-131A1</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79477007</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Gallium-66 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Gallium-66 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#gallium_67_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#gallium_67_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49631"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^67^Gallium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008008</DICOM-code-value>
+        <DICOM-old-SRT-code>C-131A2</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008008</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Gallium-67 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Gallium-67 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#gallium_68_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#gallium_68_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49631"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^68^Gallium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35337001</DICOM-code-value>
+        <DICOM-old-SRT-code>C-131A3</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35337001</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Gallium-68 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Gallium-68 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#germanium_68_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#germanium_68_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30441"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^68^Germanium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53315004</DICOM-code-value>
+        <DICOM-old-SRT-code>C-128A2</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53315004</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Germanium-68 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Germanium-68 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#gold_198_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#gold_198_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_29287"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^198^Gold</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24301009</DICOM-code-value>
+        <DICOM-old-SRT-code>C-146A9</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24301009</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Gold-198 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Gold-198 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#gold_199_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#gold_199_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_29287"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^199^Gold</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70544003</DICOM-code-value>
+        <DICOM-old-SRT-code>C-146B1</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70544003</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Gold-199 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Gold-199 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#indium_111_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#indium_111_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30430"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^111^Indium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56609000</DICOM-code-value>
+        <DICOM-old-SRT-code>C-145A4</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56609000</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Indium-111 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Indium-111 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#indium_113m_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#indium_113m_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30430"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^113m^Indium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48895003</DICOM-code-value>
+        <DICOM-old-SRT-code>C-145A5</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48895003</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Indium-113m atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Indium-113m atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#iodine_123_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#iodine_123_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24859"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^123^Iodine</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21572004</DICOM-code-value>
+        <DICOM-old-SRT-code>C-114A4</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21572004</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Iodine-123 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Iodine-123 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#iodine_124_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#iodine_124_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24859"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^124^Iodine</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40937006</DICOM-code-value>
+        <DICOM-old-SRT-code>C-114A5</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40937006</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Iodine-124 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Iodine-124 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#iodine_125_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#iodine_125_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24859"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^125^Iodine</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68630002</DICOM-code-value>
+        <DICOM-old-SRT-code>C-114A6</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68630002</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Iodine-125 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Iodine-125 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#iodine_131_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#iodine_131_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24859"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^131^Iodine</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1368003</DICOM-code-value>
+        <DICOM-old-SRT-code>C-114B1</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1368003</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Iodine-131 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Iodine-131 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#iron_52_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#iron_52_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18248"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^52^Iron</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69089000</DICOM-code-value>
+        <DICOM-old-SRT-code>C-130A1</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69089000</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Iron-52 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Iron-52 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#iron_59_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#iron_59_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18248"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^59^Iron</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68580003</DICOM-code-value>
+        <DICOM-old-SRT-code>C-130A3</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68580003</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Iron-59 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Iron-59 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#krypton_81m_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#krypton_81m_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49696"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^81m^Krypron</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61716009</DICOM-code-value>
+        <DICOM-old-SRT-code>C-173A5</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61716009</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Krypton-81m atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Krypton-81m atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#krypton_85_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#krypton_85_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49696"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^85^Krypron</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34127007</DICOM-code-value>
+        <DICOM-old-SRT-code>C-173A7</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34127007</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Krypton-85 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Krypton-85 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#lead_203_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#lead_203_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25016"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^203^Lead</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47588004</DICOM-code-value>
+        <DICOM-old-SRT-code>C-132A8</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47588004</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Lead-203 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Lead-203 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#lutetium_177_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#lutetium_177_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33382"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^177^Lutetium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">447553000</DICOM-code-value>
+        <DICOM-old-SRT-code>C-101ED</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">447553000</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Lutetium-177 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Lutetium-177 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#manganese_52_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#manganese_52_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18291"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^52^Manganese</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37225000</DICOM-code-value>
+        <DICOM-old-SRT-code>C-149A1</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37225000</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Manganese-52 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Manganese-52 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#nitrogen_13_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#nitrogen_13_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25555"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^13^Nitrogen</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21576001</DICOM-code-value>
+        <DICOM-old-SRT-code>C-107A1</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21576001</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Nitrogen-13 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Nitrogen-13 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#oxygen_14_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#oxygen_14_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25805"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^14^Oxygen</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">424875009</DICOM-code-value>
+        <DICOM-old-SRT-code>C-1018C</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">424875009</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Oxygen-14 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Oxygen-14 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#oxygen_15_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#oxygen_15_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25805"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^15^Oxygen</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">129504001</DICOM-code-value>
+        <DICOM-old-SRT-code>C-B1038</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">129504001</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Oxygen-15 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Oxygen-15 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#phosphorus_32_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#phosphorus_32_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28659"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^32^Phosphorus</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32505007</DICOM-code-value>
+        <DICOM-old-SRT-code>C-106A1</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32505007</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Phosphorus-32 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Phosphorus-32 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#potassium_38_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#potassium_38_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26216"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^38^Potassium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">423764008</DICOM-code-value>
+        <DICOM-old-SRT-code>C-135A4</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">423764008</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Potassium-38 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Potassium-38 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#potassium_42_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#potassium_42_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26216"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^42^Potassium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59844004</DICOM-code-value>
+        <DICOM-old-SRT-code>C-135A2</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59844004</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Potassium-42 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Potassium-42 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#potassium_43_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#potassium_43_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26216"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^43^Potassium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8202008</DICOM-code-value>
+        <DICOM-old-SRT-code>C-135A3</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8202008</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Potassium-43 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Potassium-43 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+        <obo:IAO_0000115 xml:lang="en">an atom that has excess nuclear energy, making it unstable. This excess energy can be used in one of three ways: emitted from the nucleus as gamma radiation; transferred to one of its electrons to release it as a conversion electron; or used to create and emit a new particle (alpha particle or beta particle) from the nucleus. During those processes, the radionuclide is said to undergo radioactive decay. [from wikipedia, citing R.H. Petrucci, W.S. Harwood and F.G. Herring, General Chemistry (8th ed., Prentice-Hall 2002), p.1025–26]</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">radionuclide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radium_223_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radium_223_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33325"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^223^Radium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24853006</DICOM-code-value>
+        <DICOM-old-SRT-code>C-136A2</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24853006</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Radium-223 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Radium-223 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#rhenium_186_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#rhenium_186_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49882"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^186^Rhenium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">395865006</DICOM-code-value>
+        <DICOM-old-SRT-code>C-11906</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">395865006</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Rhenium-186 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Rhenium-186 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#rhenium_188_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#rhenium_188_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49882"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^188^Rhenium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">423578007</DICOM-code-value>
+        <DICOM-old-SRT-code>C-1018D</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">423578007</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Rhenium-188 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Rhenium-188 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#rubidium_82_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#rubidium_82_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33322"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^82^Rubidium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79197006</DICOM-code-value>
+        <DICOM-old-SRT-code>C-159A2</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79197006</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Rubidium-82 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Rubidium-82 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#ruthenium_97_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#ruthenium_97_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30682"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^97^Ruthenium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23788009</DICOM-code-value>
+        <DICOM-old-SRT-code>C-180A2</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23788009</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Ruthenium-97 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Ruthenium-97 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#samarium_153_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#samarium_153_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33374"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^153^Samarium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">419804008</DICOM-code-value>
+        <DICOM-old-SRT-code>C-B1134</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">419804008</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Samarium-153 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Samarium-153 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#selenium_73_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#selenium_73_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27568"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^73^Selenium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87437000</DICOM-code-value>
+        <DICOM-old-SRT-code>C-116A2</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87437000</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Selenium-73 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Selenium-73 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#selenium_75_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#selenium_75_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27568"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^75^Selenium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43239002</DICOM-code-value>
+        <DICOM-old-SRT-code>C-116A3</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43239002</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Selenium-75 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Selenium-75 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#sodium_22_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#sodium_22_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26708"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^22^Sodium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71633006</DICOM-code-value>
+        <DICOM-old-SRT-code>C-155A1</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71633006</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Sodium-22 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sodium-22 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#sodium_24_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#sodium_24_atom">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26708"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^24^Sodium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58541008</DICOM-code-value>
+        <DICOM-old-SRT-code>C-155A2</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58541008</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Sodium-24 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sodium-24 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#strontium_85_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#strontium_85_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33324"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^85^Strontium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">111084009</DICOM-code-value>
+        <DICOM-old-SRT-code>C-158A3</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">111084009</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Strontium-85 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Strontium-85 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#strontium_87m_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#strontium_87m_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33324"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^87m^Strontium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78023008</DICOM-code-value>
+        <DICOM-old-SRT-code>C-158A5</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78023008</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Strontium-87m atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Strontium-87m atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#strontium_89_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#strontium_89_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33324"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^89^Strontium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7770004</DICOM-code-value>
+        <DICOM-old-SRT-code>C-158A6</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7770004</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Strontium-89 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Strontium-89 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#tantalum_178_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#tantalum_178_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33348"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^178^Tantalum</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6301006</DICOM-code-value>
+        <DICOM-old-SRT-code>C-156A6</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6301006</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Tantalum-178 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Tantalum-178 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#technetium_94m_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#technetium_94m_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33353"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^94m^Technetium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">424079002</DICOM-code-value>
+        <DICOM-old-SRT-code>C-163AA</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">424079002</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Technetium-94m atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Technetium-94m atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#technetium_99m_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#technetium_99m_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33353"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^99m^Technetium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72454006</DICOM-code-value>
+        <DICOM-old-SRT-code>C-163A8</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72454006</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Technetium-99m atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Technetium-99m atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#thallium_201_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#thallium_201_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30440"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^201^Thallium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60057003</DICOM-code-value>
+        <DICOM-old-SRT-code>C-138A9</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60057003</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Thallium-201 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Thallium-201 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#titanium_45_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#titanium_45_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33341"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^45^Titanium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75696008</DICOM-code-value>
+        <DICOM-old-SRT-code>C-166A2</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75696008</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Titanium-45 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Titanium-45 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#xenon_127_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#xenon_127_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49957"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^127^Xenon</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27081007</DICOM-code-value>
+        <DICOM-old-SRT-code>C-172A5</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27081007</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Xenon-127 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Xenon-127 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#xenon_133_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#xenon_133_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49957"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^133^Xenon</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80751004</DICOM-code-value>
+        <DICOM-old-SRT-code>C-172A8</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80751004</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Xenon-133 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Xenon-133 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#ytterbium_169_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#ytterbium_169_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33381"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^169^Ytterbium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41758004</DICOM-code-value>
+        <DICOM-old-SRT-code>C-181A3</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41758004</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Ytterbium-169 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Ytterbium-169 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#yttrium_86_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#yttrium_86_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33331"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^86^Yttrium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10738001</DICOM-code-value>
+        <DICOM-old-SRT-code>C-162A3</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10738001</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Yttrium-86 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Yttrium-86 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#yttrium_90_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#yttrium_90_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33331"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^90^Yttrium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14691008</DICOM-code-value>
+        <DICOM-old-SRT-code>C-162A7</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14691008</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Yttrium-90 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Yttrium-90 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#zinc_62_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#zinc_62_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27363"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^62^Zinc</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65054007</DICOM-code-value>
+        <DICOM-old-SRT-code>C-141A1</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65054007</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Zinc-62 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Zinc-62 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#zirconium_89_atom -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#zirconium_89_atom">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#radionuclide"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33342"/>
+        <DICOM-CSD>SCT</DICOM-CSD>
+        <DICOM-code-meaning xml:lang="en">^89^Zirconium</DICOM-code-meaning>
+        <DICOM-code-value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63360001</DICOM-code-value>
+        <DICOM-old-SRT-code>C-168A4</DICOM-old-SRT-code>
+        <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63360001</snomed-SCTID>
+        <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">Zirconium-89 atom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Zirconium-89 atom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_18248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_18248"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_18291 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_18291"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_22927 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22927"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24061"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24859 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24859"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_25016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_25555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25555"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_25805 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25805"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_26216 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26216"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_26708 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26708"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_27363 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27363"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_27563 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27563"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_27568 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27568"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_27594 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27594"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_27638 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27638"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_28073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28073"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_28659 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28659"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_28694 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28694"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_29287 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_29287"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30430 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30430"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30440 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30440"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30441 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30441"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30682 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30682"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_32594 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_32594"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33250 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33322 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33322"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33324 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33324"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33325 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33325"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33331 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33331"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33341"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33342 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33342"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33348 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33348"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33353"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33374 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33374"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33375 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33375"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33381 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33381"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33382 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33382"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_49631 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49631"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_49696 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49696"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_49882 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49882"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_49957 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49957"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

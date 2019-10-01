@@ -1,0 +1,1662 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://medicis.univ-rennes1.fr/ontologies/radiopharmaceuticals.owl"
+     xml:base="http://medicis.univ-rennes1.fr/ontologies/radiopharmaceuticals.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:umls="http://bioportal.bioontology.org/ontologies/umls/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://medicis.univ-rennes1.fr/ontologies/radiopharmaceuticals.owl">
+        <owl:versionInfo>2016AB</owl:versionInfo>
+        <rdfs:comment>RDF Version of the UMLS ontology SNMI; converted with the UMLS2RDF tool (https://github.com/ncbo/umls2rdf), developed by the NCBO project.</rdfs:comment>
+        <rdfs:label>SNMI</rdfs:label>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://bioportal.bioontology.org/ontologies/umls/cui -->
+
+    <owl:AnnotationProperty rdf:about="http://bioportal.bioontology.org/ontologies/umls/cui"/>
+    
+
+
+    <!-- http://bioportal.bioontology.org/ontologies/umls/tui -->
+
+    <owl:AnnotationProperty rdf:about="http://bioportal.bioontology.org/ontologies/umls/tui"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://bioportal.bioontology.org/ontologies/umls/hasSTY -->
+
+    <owl:ObjectProperty rdf:about="http://bioportal.bioontology.org/ontologies/umls/hasSTY">
+        <rdfs:comment>Semantic type UMLS property</rdfs:comment>
+        <rdfs:label>Semantic type UMLS property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/associated_with -->
+
+    <owl:ObjectProperty rdf:about="http://purl.bioontology.org/ontology/SNMI/associated_with">
+        <rdfs:comment>Inverse of associated_with</rdfs:comment>
+        <rdfs:label>Associated with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/has_location -->
+
+    <owl:ObjectProperty rdf:about="http://purl.bioontology.org/ontology/SNMI/has_location">
+        <rdfs:comment>Inverse of location_of</rdfs:comment>
+        <rdfs:label>Has location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/location_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.bioontology.org/ontology/SNMI/location_of">
+        <rdfs:comment>Inverse of has_location</rdfs:comment>
+        <rdfs:label>Location of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/EZ -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.bioontology.org/ontology/SNMI/EZ">
+        <rdfs:comment>Enzyme Commission Number - International Union of Biochemists Enzyme Commission number for an enzyme concept.</rdfs:comment>
+        <rdfs:label>EZ</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/SB -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.bioontology.org/ontology/SNMI/SB">
+        <rdfs:comment>Named subset of a source</rdfs:comment>
+        <rdfs:label>SB</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/SHF -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.bioontology.org/ontology/SNMI/SHF">
+        <rdfs:comment>SNOMED Hospital Formulary Code - the American Hospital Formulary Code for a chemical contained in SNOMED International (e.g. 84:24:12) </rdfs:comment>
+        <rdfs:label>SHF</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/SIC -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.bioontology.org/ontology/SNMI/SIC">
+        <rdfs:comment>SNOMED ICD9CM Reference - the ICD9CM code or codes listed as relevant to the meaning of the concept in SNOMED International.</rdfs:comment>
+        <rdfs:label>SIC</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/SMX -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.bioontology.org/ontology/SNMI/SMX">
+        <rdfs:comment>SNOMED Multiaxial coding - an alphanumeric string that includes hyphens, parentheses, and sometimes ellipses. </rdfs:comment>
+        <rdfs:label>SMX</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#amount_of_substance -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#amount_of_substance"/>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1010 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1010">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0358509</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T196</umls:tui>
+        <skos:prefLabel xml:lang="eng">Therapeutic radioisotope, NOS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1011 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1011">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304955</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Sodium chromate Cr51</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1012 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1012">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304956</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Chromium 51 albumin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1013 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1013">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304957</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Chromium 51 chloride</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1016 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1016">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304958</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Copper 64 versenate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1017 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1017">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304959</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Copper 64 acetate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1018 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1018">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304960</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Copper 67 ceruloplasmin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1021 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1021">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304961</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Cyanocobalamin Co57</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1022 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1022">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304962</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T127</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Cyanocobalamin Co58</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1023 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1023">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304963</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T127</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Cyanocobalamin Co60</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1031 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1031">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0046056</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Fluorodeoxyglucose F18</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1032 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1032">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304965</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Sodium fluoride F18</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1041 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1041">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0893383</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Gallium 67 citrate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1051 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1051">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304966</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Colloidal gold Au198</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1061 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1061">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304967</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T196</umls:tui>
+        <skos:prefLabel xml:lang="eng">Indium 111 pentetate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1062 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1062">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304968</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Disodium indium111</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1063 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1063">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304969</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Colloidal Indium 111</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1065 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1065">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304970</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Indium 111-Fe(OH)3</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1066 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1066">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304971</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T196</umls:tui>
+        <skos:prefLabel xml:lang="eng">Indium 111 red cell label</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1067 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1067">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0936259</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T116</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Indium 111 transferrin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1068 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1068">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304972</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Indium 113 bleomycin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1069 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1069">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0361440</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Indium 113 chloride</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1070 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1070">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304973</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Indium 113 pentetate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1071 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1071">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304974</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Indium 113 oxoquinoline WBC label</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1072 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1072">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304975</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Indium 113 oxoquinoline platelet label</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1073 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1073">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304976</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Indium 113 oxoquinoline RBC label</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1081 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1081">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304977</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Sodium iodide I123</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1082 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1082">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304978</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Fibrinogen I123</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1083 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1083">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304979</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Oleic acid I125</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1084 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1084">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304980</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iodinated I125 albumin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1085 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1085">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0282340</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Rose Bengal sodium I131</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1086 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1086">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304982</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Sodium iodide I131</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1087 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1087">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304983</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iodocholesterol I131</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1088 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1088">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304984</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iothalamate sodium I125</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1089 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1089">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304985</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iodinated I131 albumin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1090 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1090">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304986</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iodinated I131 aggregated albumin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1091 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1091">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304987</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:altLabel xml:lang="eng">Iodine 131 hippuran</skos:altLabel>
+        <skos:prefLabel xml:lang="eng">Iodohippurate I131 sodium</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1092 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1092">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304989</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Diiodofluorecein I131</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1093 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1093">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304990</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iodinated I125 oleic acid and triolein</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1094 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1094">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304991</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iodinated I125 levothyroxine</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1095 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1095">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304992</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iodinated I125 liothyronine</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1096 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1096">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304993</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iodinated I125 povidone</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1097 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1097">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304994</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iodinated I125 Rose Bengal</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1098 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1098">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304995</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iodinated I125 sealed source</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1099 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1099">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304996</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iodinated I125 sodium iodine</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1100 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1100">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304997</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iodinated I125 human serum albumin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1105 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1105">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304998</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iodohippurate I125 sodium</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1107 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1107">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0304999</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iodohippurate I123 sodium</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1108 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1108">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305000</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iofetamine I123 hydrochloride</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1109 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1109">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305001</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:altLabel xml:lang="eng">Iodine 131 PVP</skos:altLabel>
+        <skos:prefLabel xml:lang="eng">Iodine 131 polyvinylpyrrolidone</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1111 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1111">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305002</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iodinated I131 gamma globulin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1121 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1121">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305003</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Ferrous citrate Fe59</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1122 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1122">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305004</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Ferrous chloride Fe59</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1123 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1123">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305005</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Ferrous sulfate Fe59</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1124 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1124">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305006</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Iron Fe59 labeled dextran</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1140 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1140">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0392428</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Chromic phosphate P32</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1142 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1142">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305007</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Sodium phosphate P32</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1150 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1150">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305008</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Potassium chloride K43</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1151 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1151">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305009</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Potassium carbonate K42</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1152 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1152">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305010</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Potassium chloride K42</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1171 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1171">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0034616</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T116</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Selenomethionione Se75</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1172 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1172">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0046666</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Selenium 75 HCAT</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1175 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1175">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305013</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Sodium chloride Na24</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1176 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1176">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0205951</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Sodium chloride Na22</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1180 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1180">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305015</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Strontium chloride Sr85</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1181 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1181">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305016</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Strontium chloride Sr87</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1182 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1182">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305017</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Strontium nitrate Sr85</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1183 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1183">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305018</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Strontium nitrate Sr87</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1200 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1200">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0039415</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99m aggregated albumin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1203 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1203">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305020</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99m microaggregated albumin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1204 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1204">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305021</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T116</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99m albumin colloid</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1205 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1205">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305022</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T116</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99c albumin microspheres</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1206 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1206">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0039418</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Sodium pertechnetate Tc99m</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1207 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1207">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0075932</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99c disofenin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1208 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1208">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0075962</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99c mebrofenin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1209 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1209">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0075958</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99c lidofenin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1210 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1210">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305027</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99c iron ascorbate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1211 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1211">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305028</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99c stannous etidronate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1212 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1212">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305029</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99c medronate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1213 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1213">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305030</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99c oxidronate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1214 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1214">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305031</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99c pentetate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1215 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1215">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305032</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99c pyro and polyphosphates</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1216 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1216">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0665175</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T116</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99c serum albumin</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1217 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1217">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0521969</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99m pamidronate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1218 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1218">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0039416</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99m medronate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1220 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1220">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305034</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T121</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99c sodium glucoheptonate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1221 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1221">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0075928</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99c succimer</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1222 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1222">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0039419</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99c sulfur colloid</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1223 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1223">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0145055</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99c exametazine</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1224 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1224">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305038</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99 tagged red cells</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1225 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1225">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305039</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:altLabel xml:lang="eng">Tc99 labeled HIDA</skos:altLabel>
+        <skos:prefLabel xml:lang="eng">Technetium Tc99 N-substituted iminodiacetate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1231 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1231">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305040</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:prefLabel xml:lang="eng">Thallous chloride Tl201</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1251 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1251">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305041</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T197</umls:tui>
+        <skos:altLabel xml:lang="eng">Yb169-DTPA - pentetate</skos:altLabel>
+        <skos:prefLabel xml:lang="eng">Pentetate calcium trisodium Yb169</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1300 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1300">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305042</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Carbon 14 triolein</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1302 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1302">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305043</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Carbon 14 D-xylose</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/C-B1304 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1304">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+        <umls:cui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0305044</umls:cui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T109</umls:tui>
+        <umls:tui rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T130</umls:tui>
+        <skos:prefLabel xml:lang="eng">Cholyl-carbon14 glycine</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Indium_111_Capromab_Pendetide -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Indium_111_Capromab_Pendetide">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Indium_111_Chloride -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Indium_111_Chloride">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Indium_111_Pentetreotide -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Indium_111_Pentetreotide">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Indium_111_oxyquinoline -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Indium_111_oxyquinoline">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Iodine_123_3-Iodobenzylguanidine_MIBG -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Iodine_123_3-Iodobenzylguanidine_MIBG">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Iodine_131_3-Iodobenzylguanidine_MIBG -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Iodine_131_3-Iodobenzylguanidine_MIBG">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Iodine_131_Methylnorcholestenol -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Iodine_131_Methylnorcholestenol">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Krypton_81m -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Krypton_81m">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Methylpentadecanoic_Acid -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Methylpentadecanoic_Acid">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Dimercaptosuccinic_Acid_DMSA -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Dimercaptosuccinic_Acid_DMSA">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Galactosyl_Human_Serum_Albumin_Diethylenetriamine -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Galactosyl_Human_Serum_Albumin_Diethylenetriamine">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Hydroxymethylene_diphosphonate_HMDP -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Hydroxymethylene_diphosphonate_HMDP">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Mercaptoacetyl_triglycine_MAG3 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Mercaptoacetyl_triglycine_MAG3">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Technetium_99m_N-pyridoxyl-5-methyltryptophan -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_N-pyridoxyl-5-methyltryptophan">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Phytate -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Phytate">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Stannous_Colloid -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Stannous_Colloid">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Technetium_99m_labeled_carbon -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_labeled_carbon">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Technetium_Tc_99m_Teboroxime -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_Tc_99m_Teboroxime">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Technetium_Tc_99m_Tetrofosmin -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_Tc_99m_Tetrofosmin">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Technetium_Tc_99m_depreotide -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_Tc_99m_depreotide">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/Yb_169_-DTPA_-_pentetate -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/Yb_169_-DTPA_-_pentetate">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNMI/radiopharmaceutical">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#amount_of_substance"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1010"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1011"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1012"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1013"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1016"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1017"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1018"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1021"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1022"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1023"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1031"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1032"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1041"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1051"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1061"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1062"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1063"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1065"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1066"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1067"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1068"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1069"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1070"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1071"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1072"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1073"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1081"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1082"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1083"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1084"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1085"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1086"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1087"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1088"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1089"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1090"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1091"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1092"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1093"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1094"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1095"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1096"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1097"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1098"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1099"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1100"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1105"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1107"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1108"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1109"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1111"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1121"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1122"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1123"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1124"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1140"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1142"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1150"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1151"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1152"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1171"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1172"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1175"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1176"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1180"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1181"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1182"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1183"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1200"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1203"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1204"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1205"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1206"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1207"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1208"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1209"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1210"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1211"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1212"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1213"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1214"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1215"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1216"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1217"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1218"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1220"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1221"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1222"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1223"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1224"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1225"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1231"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1251"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1300"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1302"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/C-B1304"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Indium_111_Capromab_Pendetide"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Indium_111_Chloride"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Indium_111_Pentetreotide"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Indium_111_oxyquinoline"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Iodine_123_3-Iodobenzylguanidine_MIBG"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Iodine_131_3-Iodobenzylguanidine_MIBG"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Iodine_131_Methylnorcholestenol"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Krypton_81m"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Methylpentadecanoic_Acid"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Dimercaptosuccinic_Acid_DMSA"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Galactosyl_Human_Serum_Albumin_Diethylenetriamine"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Hydroxymethylene_diphosphonate_HMDP"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Mercaptoacetyl_triglycine_MAG3"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_N-pyridoxyl-5-methyltryptophan"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Phytate"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_Stannous_Colloid"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_99m_labeled_carbon"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_Tc_99m_Teboroxime"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_Tc_99m_Tetrofosmin"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Technetium_Tc_99m_depreotide"/>
+            <rdf:Description rdf:about="http://purl.bioontology.org/ontology/SNMI/Yb_169_-DTPA_-_pentetate"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
