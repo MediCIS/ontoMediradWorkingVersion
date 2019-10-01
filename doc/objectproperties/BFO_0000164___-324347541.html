@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='../classes/index.html' class='' >Classes</a>
+<a href='index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Object Property: 'concretizes at all times'</h2>
+
+<div id='annotations_(14)'>
+<h4>Annotations (14)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/BFO_0000179___-324347505.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/BFO_0000179">'BFO&nbsp;OWL&nbsp;specification&nbsp;label'</a> <span class='literal'>"concretizes_at"</span></li>
+<li class="asserted"><a href="../annotationproperties/BFO_0000180___-324347483.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/BFO_0000180">'BFO&nbsp;CLIF&nbsp;specification&nbsp;label'</a> <span class='literal'>"concretizesAt"</span></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0000112___964462202.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0000112">'example&nbsp;of&nbsp;usage'</a> <span class='literal'>"You may concretize a piece of software by installing it in your computer"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0000112___964462202.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0000112">'example&nbsp;of&nbsp;usage'</a> <span class='literal'>"You may concretize a recipe that you find in a cookbook by turning it into a plan which exists as a realizable dependent continuant in your head."</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0000112___964462202.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0000112">'example&nbsp;of&nbsp;usage'</a> <span class='literal'>"you may concretize a poem as a pattern of memory traces in your head"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0000116___964462206.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0000116">'editor&nbsp;note'</a> <span class='literal'>"Alan Ruttenberg: This is a binary version of a ternary time-indexed, instance-level, relation. The BFO reading of the binary relation 'concretizes at all times@en' is: forall(t) exists_at(x,t) -&gt; exists_at(y,t) and 'concretizes@en(x,y,t)'."</span></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0000600___964466974.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0000600">elucidation</a> <span class='literal'>"b concretizes c at t means: b is a specifically dependent continuant & c is a generically dependent continuant & for some independent continuant that is not a spatial region d, b s-depends_on d at t & c g-depends on d at t & if c migrates from bearer d to another bearer e than a copy of b will be created in e. (axiom label in BFO2 Reference: [075-002])"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0000601___964466975.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0000601">'has&nbsp;associated&nbsp;axiom(nl)'</a> <span class='literal'>"if b g-depends on c at some time t, then there is some d, such that d concretizes b at t and d s-depends_on c at t. (axiom label in BFO2 Reference: [076-001])"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0000602___964466976.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0000602">'has&nbsp;associated&nbsp;axiom(fol)'</a> <span class='literal'>"(forall (x y t) (if (concretizesAt x y t) (and (SpecificallyDependentContinuant x) (GenericallyDependentContinuant y) (exists (z) (and (IndependentContinuant z) (specificallyDependsOnAt x z t) (genericallyDependsOnAt y z t)))))) // axiom label in BFO2 CLIF: [075-002] "</span></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0000602___964466976.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0000602">'has&nbsp;associated&nbsp;axiom(fol)'</a> <span class='literal'>"(forall (x y t) (if (genericallyDependsOnAt x y t) (exists (z) (and (concretizesAt z x t) (specificallyDependsOnAt z y t))))) // axiom label in BFO2 CLIF: [076-001] "</span></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0010000___965384729.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0010000">'has&nbsp;axiom&nbsp;label'</a> http://purl.obolibrary.org/obo/bfo/axiom/075-002 
+<a href='http://purl.obolibrary.org/obo/bfo/axiom/075-002' class='urlOption' target='_blank' ><img src="../images/external.png" title="Attempt to open link in another window" /></a> 
+<a href='../ontologies/index.html?action=load&uri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2Fbfo%2Faxiom%2F075-002&redirect=..%2Fobjectproperties%2FBFO_0000164___-324347541.html' class='urlOption' ><img src="../images/download.png" title="Attempt to load owl/rdf" /></a></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0010000___965384729.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0010000">'has&nbsp;axiom&nbsp;label'</a> http://purl.obolibrary.org/obo/bfo/axiom/076-001 
+<a href='http://purl.obolibrary.org/obo/bfo/axiom/076-001' class='urlOption' target='_blank' ><img src="../images/external.png" title="Attempt to open link in another window" /></a> 
+<a href='../ontologies/index.html?action=load&uri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2Fbfo%2Faxiom%2F076-001&redirect=..%2Fobjectproperties%2FBFO_0000164___-324347541.html' class='urlOption' ><img src="../images/download.png" title="Attempt to load owl/rdf" /></a></li>
+<li class="asserted"><a href="../annotationproperties/isDefinedBy___449337134.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a> http://purl.obolibrary.org/obo/<b>bfo.owl</b> 
+<a href='http://purl.obolibrary.org/obo/bfo.owl' class='urlOption' target='_blank' ><img src="../images/external.png" title="Attempt to open link in another window" /></a></li>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"concretizes at all times"</span> <span style='color: black;'>@en</span></li>
+</ul>
+</div>
+</div><!-- annotations (14) -->
+
+
+<div id='superproperties_(1)'>
+<h4>Superproperties (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="BFO_0000059___-324348528.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000059">'concretizes&nbsp;at&nbsp;some&nbsp;time'</a></li>
+</ul>
+</div>
+</div><!-- superproperties (1) -->
+
+
+<div id='usage_(2)'>
+<h4>Usage (2)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><span class='Object Property active-entity'>'concretizes&nbsp;at&nbsp;all&nbsp;times'</span> <span class='keyword'>&sube;</span> <a href="BFO_0000059___-324348528.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000059">'concretizes&nbsp;at&nbsp;some&nbsp;time'</a></li>
+<li class="asserted"><a href="BFO_0000125___-324347664.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000125">'has&nbsp;specific&nbsp;dependent&nbsp;at&nbsp;some&nbsp;time'</a> <span class='keyword'>o</span> <span class='Object Property active-entity'>'concretizes&nbsp;at&nbsp;all&nbsp;times'</span> <span class='keyword'>SubPropertyOf</span> <a href="BFO_0000101___-324347730.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000101">'has&nbsp;generic&nbsp;dependent&nbsp;at&nbsp;some&nbsp;time'</a><ul><li><a href="../annotationproperties/IAO_0010000___965384729.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0010000">'has&nbsp;axiom&nbsp;label'</a> http://purl.obolibrary.org/obo/bfo/axiom/573 
+<a href='http://purl.obolibrary.org/obo/bfo/axiom/573' class='urlOption' target='_blank' ><img src="../images/external.png" title="Attempt to open link in another window" /></a> 
+<a href='../ontologies/index.html?action=load&uri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2Fbfo%2Faxiom%2F573&redirect=..%2Fobjectproperties%2FBFO_0000164___-324347541.html' class='urlOption' ><img src="../images/download.png" title="Attempt to load owl/rdf" /></a></li></ul></li>
+</ul>
+</div>
+</div><!-- usage (2) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

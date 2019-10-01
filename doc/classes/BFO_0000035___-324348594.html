@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='index.html' class='' >Classes</a>
+<a href='../objectproperties/index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Class: 'process boundary'</h2>
+
+<div id='annotations_(11)'>
+<h4>Annotations (11)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/BFO_0000179___-324347505.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/BFO_0000179">'BFO&nbsp;OWL&nbsp;specification&nbsp;label'</a> <span class='literal'>"p-boundary"</span></li>
+<li class="asserted"><a href="../annotationproperties/BFO_0000180___-324347483.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/BFO_0000180">'BFO&nbsp;CLIF&nbsp;specification&nbsp;label'</a> <span class='literal'>"ProcessBoundary"</span></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0000112___964462202.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0000112">'example&nbsp;of&nbsp;usage'</a> <span class='literal'>"the boundary between the 2nd and 3rd year of your life."</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0000115___964462205.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0000115">definition</a> <span class='literal'>"p is a process boundary =Def. p is a temporal part of a process & p has no proper temporal parts. (axiom label in BFO2 Reference: [084-001])"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0000601___964466975.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0000601">'has&nbsp;associated&nbsp;axiom(nl)'</a> <span class='literal'>"Every process boundary occupies_temporal_region a zero-dimensional temporal region. (axiom label in BFO2 Reference: [085-002])"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0000602___964466976.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0000602">'has&nbsp;associated&nbsp;axiom(fol)'</a> <span class='literal'>"(forall (x) (if (ProcessBoundary x) (exists (y) (and (ZeroDimensionalTemporalRegion y) (occupiesTemporalRegion x y))))) // axiom label in BFO2 CLIF: [085-002] "</span></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0000602___964466976.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0000602">'has&nbsp;associated&nbsp;axiom(fol)'</a> <span class='literal'>"(iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] "</span></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0010000___965384729.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0010000">'has&nbsp;axiom&nbsp;label'</a> http://purl.obolibrary.org/obo/bfo/axiom/084-001 
+<a href='http://purl.obolibrary.org/obo/bfo/axiom/084-001' class='urlOption' target='_blank' ><img src="../images/external.png" title="Attempt to open link in another window" /></a> 
+<a href='../ontologies/index.html?action=load&uri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2Fbfo%2Faxiom%2F084-001&redirect=..%2Fclasses%2FBFO_0000035___-324348594.html' class='urlOption' ><img src="../images/download.png" title="Attempt to load owl/rdf" /></a></li>
+<li class="asserted"><a href="../annotationproperties/IAO_0010000___965384729.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0010000">'has&nbsp;axiom&nbsp;label'</a> http://purl.obolibrary.org/obo/bfo/axiom/085-002 
+<a href='http://purl.obolibrary.org/obo/bfo/axiom/085-002' class='urlOption' target='_blank' ><img src="../images/external.png" title="Attempt to open link in another window" /></a> 
+<a href='../ontologies/index.html?action=load&uri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2Fbfo%2Faxiom%2F085-002&redirect=..%2Fclasses%2FBFO_0000035___-324348594.html' class='urlOption' ><img src="../images/download.png" title="Attempt to load owl/rdf" /></a></li>
+<li class="asserted"><a href="../annotationproperties/isDefinedBy___449337134.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a> http://purl.obolibrary.org/obo/<b>bfo.owl</b> 
+<a href='http://purl.obolibrary.org/obo/bfo.owl' class='urlOption' target='_blank' ><img src="../images/external.png" title="Attempt to open link in another window" /></a></li>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"process boundary"</span> <span style='color: black;'>@en</span></li>
+</ul>
+</div>
+</div><!-- annotations (11) -->
+
+
+<div id='superclasses_(5)'>
+<h4>Superclasses (5)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="BFO_0000003___-324348689.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000003">occurrent</a></li>
+<li class="asserted"><a href="../objectproperties/BFO_0000108___-324347723.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000108">'exists&nbsp;at'</a> <span class='only'>only</span> <a href="BFO_0000148___-324347599.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000148">'zero-dimensional&nbsp;temporal&nbsp;region'</a></li>
+<li class="asserted"><a href="../objectproperties/BFO_0000117___-324347693.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000117">'has&nbsp;occurrent&nbsp;part'</a> <span class='only'>only</span> <span class='Class active-entity'>'process&nbsp;boundary'</span></li>
+<li class="asserted"><a href="../objectproperties/BFO_0000130___-324347638.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000130">'occupies&nbsp;spatiotemporal&nbsp;region'</a> <span class='only'>only</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="BFO_0000011___-324348660.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000011">'spatiotemporal&nbsp;region'</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../objectproperties/BFO_0000139___-324347629.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000139">'temporal&nbsp;part&nbsp;of'</a> <span class='some'>some</span> <a href="BFO_0000011___-324348660.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000011">'spatiotemporal&nbsp;region'</a>)</li>
+<li class="asserted"><a href="../objectproperties/BFO_0000132___-324347636.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000132">'part&nbsp;of&nbsp;occurrent'</a> <span class='only'>only</span> (<span class='Class active-entity'>'process&nbsp;boundary'</span> <span class='keyword'>or</span> <a href="BFO_0000015___-324348656.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000015">process</a>)</li>
+</ul>
+</div>
+</div><!-- superclasses (5) -->
+
+
+<div id='disjoints_(4)'>
+<h4>Disjoints (4)</h4>
+<div class='codebox'>
+<span class="asserted"><span class='Class active-entity'>'process&nbsp;boundary'</span></span>,
+<span class="asserted"><a href="BFO_0000011___-324348660.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000011">'spatiotemporal&nbsp;region'</a></span>,
+<span class="asserted"><a href="BFO_0000008___-324348684.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000008">'temporal&nbsp;region'</a></span>,
+<span class="asserted"><a href="BFO_0000015___-324348656.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000015">process</a></span></div>
+</div><!-- disjoints (4) -->
+
+
+<div id='usage_(3)'>
+<h4>Usage (3)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="BFO_0000015___-324348656.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000015">process</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/BFO_0000117___-324347693.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000117">'has&nbsp;occurrent&nbsp;part'</a> <span class='only'>only</span> (<span class='Class active-entity'>'process&nbsp;boundary'</span> <span class='keyword'>or</span> <a href="BFO_0000015___-324348656.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000015">process</a>)<ul><li><a href="../annotationproperties/IAO_0010000___965384729.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0010000">'has&nbsp;axiom&nbsp;label'</a> http://purl.obolibrary.org/obo/bfo/axiom/111 
+<a href='http://purl.obolibrary.org/obo/bfo/axiom/111' class='urlOption' target='_blank' ><img src="../images/external.png" title="Attempt to open link in another window" /></a> 
+<a href='../ontologies/index.html?action=load&uri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2Fbfo%2Faxiom%2F111&redirect=..%2Fclasses%2FBFO_0000035___-324348594.html' class='urlOption' ><img src="../images/download.png" title="Attempt to load owl/rdf" /></a></li></ul></li>
+<li class="asserted"><a href="../objectproperties/BFO_0000066___-324348500.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000066">'occurs&nbsp;in'</a> <span class='keyword'>Domain</span> (<span class='Class active-entity'>'process&nbsp;boundary'</span> <span class='keyword'>or</span> <a href="BFO_0000015___-324348656.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000015">process</a>)<ul><li><a href="../annotationproperties/IAO_0010000___965384729.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0010000">'has&nbsp;axiom&nbsp;label'</a> http://purl.obolibrary.org/obo/bfo/axiom/178 
+<a href='http://purl.obolibrary.org/obo/bfo/axiom/178' class='urlOption' target='_blank' ><img src="../images/external.png" title="Attempt to open link in another window" /></a> 
+<a href='../ontologies/index.html?action=load&uri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2Fbfo%2Faxiom%2F178&redirect=..%2Fclasses%2FBFO_0000035___-324348594.html' class='urlOption' ><img src="../images/download.png" title="Attempt to load owl/rdf" /></a></li></ul></li>
+<li class="asserted"><a href="../objectproperties/BFO_0000067___-324348499.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000067">'contains&nbsp;process'</a> <span class='keyword'>Range</span> (<span class='Class active-entity'>'process&nbsp;boundary'</span> <span class='keyword'>or</span> <a href="BFO_0000015___-324348656.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000015">process</a>)<ul><li><a href="../annotationproperties/IAO_0010000___965384729.html" class='Annotation Property' title="http://purl.obolibrary.org/obo/IAO_0010000">'has&nbsp;axiom&nbsp;label'</a> http://purl.obolibrary.org/obo/bfo/axiom/178 
+<a href='http://purl.obolibrary.org/obo/bfo/axiom/178' class='urlOption' target='_blank' ><img src="../images/external.png" title="Attempt to open link in another window" /></a> 
+<a href='../ontologies/index.html?action=load&uri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2Fbfo%2Faxiom%2F178&redirect=..%2Fclasses%2FBFO_0000035___-324348594.html' class='urlOption' ><img src="../images/download.png" title="Attempt to load owl/rdf" /></a></li></ul></li>
+</ul>
+</div>
+</div><!-- usage (3) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>
