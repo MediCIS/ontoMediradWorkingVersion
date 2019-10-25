@@ -1,34 +1,34 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#"
      xml:base="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl"
-     xmlns:uo_for_ontospm="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoSPM.owl#"
-     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:ontomedirad1="http://medicis.univ-rennes1.fr/ontologies/ontospm/ontomedirad.owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:umls="http://bioportal.bioontology.org/ontologies/umls/"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:bfo="http://purl.obolibrary.org/obo/bfo/2014-05-03/bfo.owl#"
-     xmlns:ontomedirad="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#"
-     xmlns:Radionuclides_for_OntoMEDIRAD="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:umls="http://bioportal.bioontology.org/ontologies/umls/"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ontomedirad="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#"
+     xmlns:ontomedirad1="http://medicis.univ-rennes1.fr/ontologies/ontospm/ontomedirad.owl#"
+     xmlns:uo_for_ontospm="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoSPM.owl#"
+     xmlns:Radionuclides_for_OntoMEDIRAD="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#">
     <owl:Ontology rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl">
         <owl:versionIRI rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl/1.3.5"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/radiopharmaceuticals.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/IAO_for_OntoSPM.owl"/>
-        <owl:imports rdf:resource="http://ontofox.hegroup.org/FMA_for_OntoMEDIRAD.owl"/>
-        <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoMEDIRAD.owl"/>
-        <owl:imports rdf:resource="http://ontofox.hegroup.org/PATO_for_OntoMEDIRAD.owl"/>
-        <owl:imports rdf:resource="http://ontofox.hegroup.org/UO_for_OntoMEDIRAD.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/MEDIRADClinicalResearchStudies.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl"/>
+        <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoMEDIRAD.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/FMA_for_OntoMEDIRAD.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/PATO_for_OntoMEDIRAD.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/UO_for_OntoMEDIRAD.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2014-05-03/bfo.owl"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
     </owl:Ontology>
@@ -7560,12 +7560,45 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#set_of_parotid_glands -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#set_of_parotid_glands">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_70779"/>
+        <obo:IAO_0000115 xml:lang="en">set of the left and the right parotid glands of an individual</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">set of parotid glands</rdfs:label>
+        <skos:prefLabel xml:lang="en">set of parotid glands</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#set_of_salivary_glands -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#set_of_salivary_glands">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_70779"/>
+        <obo:IAO_0000115 xml:lang="en">set of the left and the right submandibular and parotid glands of an individual</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">set of salivary glands</rdfs:label>
+        <skos:prefLabel xml:lang="en">set of salivary glands</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#set_of_subdivisions_of_cardinal_body_parts -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#set_of_subdivisions_of_cardinal_body_parts">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_55652"/>
         <obo:IAO_0000115 xml:lang="en">Anatomical set made of subdivisions of cardinal body parts</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">set of subdivisions of cardinal body parts</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#set_of_submandibular_glands -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#set_of_submandibular_glands">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_70779"/>
+        <obo:IAO_0000115 xml:lang="en">set of the left and the right submandibular glands of an individual</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">set of submandibular glands</rdfs:label>
+        <skos:prefLabel xml:lang="en">set of submandibular glands</skos:prefLabel>
     </owl:Class>
     
 
@@ -9125,5 +9158,5 @@ Previous. An information content entity is a non-realizable information entity t
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
