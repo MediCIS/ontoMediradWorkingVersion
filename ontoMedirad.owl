@@ -1,36 +1,43 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#"
      xml:base="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:bfo="http://purl.obolibrary.org/obo/bfo/2014-05-03/bfo.owl#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:umls="http://bioportal.bioontology.org/ontologies/umls/"
-     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:ontomedirad="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#"
-     xmlns:ontomedirad1="http://medicis.univ-rennes1.fr/ontologies/ontospm/ontomedirad.owl#"
      xmlns:uo_for_ontospm="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoSPM.owl#"
-     xmlns:Radionuclides_for_OntoMEDIRAD="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#">
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ontomedirad1="http://medicis.univ-rennes1.fr/ontologies/ontospm/ontomedirad.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:umls="http://bioportal.bioontology.org/ontologies/umls/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:bfo="http://purl.obolibrary.org/obo/bfo/2014-05-03/bfo.owl#"
+     xmlns:ontomedirad="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#"
+     xmlns:Radionuclides_for_OntoMEDIRAD="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl">
-        <owl:versionIRI rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl/1.3.5"/>
+        <owl:versionIRI rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl/1.3.6"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/radiopharmaceuticals.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/IAO_for_OntoSPM.owl"/>
-        <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/MEDIRADClinicalResearchStudies.owl"/>
-        <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl"/>
-        <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoMEDIRAD.owl"/>
         <owl:imports rdf:resource="http://ontofox.hegroup.org/FMA_for_OntoMEDIRAD.owl"/>
+        <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoMEDIRAD.owl"/>
         <owl:imports rdf:resource="http://ontofox.hegroup.org/PATO_for_OntoMEDIRAD.owl"/>
         <owl:imports rdf:resource="http://ontofox.hegroup.org/UO_for_OntoMEDIRAD.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/MPATH_for_OntoMEDIRAD.owl"/>
+        <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/MEDIRADClinicalResearchStudies.owl"/>
+        <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2014-05-03/bfo.owl"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <terms:description xml:lang="en">OntoMEDIRAD is an application ontology designed to specify the vocabulary used in the description of experimental data used in the EU MEDIRAD project (H2020, Grant Agreement N°755523).
+The objective of the MEDIRAD project (title: Implications of Medical Low Dose Radiation Exposure) is to &quot;enhance the scientific bases and practice of radiation protection (RP) in the medical field. In particular, this is achieved by focusing on: 1) improvement of organ dose estimation and registration in order to a) inform clinical practice, optimise doses and set recommendations and b) provide adequate dosimetry for clinical-epidemiological studies of effects of medical radiation.&quot;
+The design of OntoMEDIRAD aims at ensuring that experimental data collected during the MEDIRAD project, consisting primarily of medical images and related estimated dose data,  is defined in an explicit and well-documented way.
+ It contains several extracts of existing ontologies, aligned onto the Basic Formal Ontology (BFO) used as a foundational ontology. The sources of the main extracts are: FMA (human anatomy), ChEBI (chemical entities), SNMI (radionuclides), IAO (information artefacts), MPATH (Mouse Pathology), PATO (phenotypic qualities), DCM (DICOM standard).</terms:description>
+        <terms:title>OntoMEDIRAD ontology</terms:title>
+        <terms:contributor>Bernard Gibaud, Marine Brenet</terms:contributor>
     </owl:Ontology>
     
 
@@ -3546,7 +3553,7 @@ Value 1: ORIGINAL/DERIVED/MIXED ; Value 2: PRIMARY/SECONDARY ; Value 3: a modali
         <obo:IAO_0000115 xml:lang="en">Representation of radiation dose as a 3D shape or object.</obo:IAO_0000115>
         <obo:IAO_0000412>dcm-128487</obo:IAO_0000412>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
-        <skos:prefLabel xml:lang="en">3D dose map</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">3D absorbed dose map</skos:prefLabel>
     </owl:Class>
     
 
@@ -4179,6 +4186,17 @@ range of densities.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#Hounsfield_unit -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#Hounsfield_unit">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiodensity_unit"/>
+        <obo:IAO_0000115 xml:lang="en">The Hounsfield unit (HU) scale is a linear transformation of the original linear attenuation coefficient measurement into one in which the radiodensity of distilled water at standard pressure and temperature (STP) is defined as zero Hounsfield units (HU), while the radiodensity of air at STP is defined as -1000 HU.  [adapted from Wikipedia Hounsfield scale]</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Hounsfield unit</rdfs:label>
+        <skos:prefLabel xml:lang="en">Hounsfield unit</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#MLEM -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#MLEM">
@@ -4589,7 +4607,7 @@ range of densities.</obo:IAO_0000115>
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#STL_format">
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#format_specification"/>
         <has_MIME_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">model/stl</has_MIME_type>
-        <obo:IAO_0000115 xml:lang="en">format specification initially developed for stereolithography CAD software, used to represent triangulated surfaces</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">format specification initially developed in the stereolithography CAD software created by 3D Systems. STL has several backronyms such as &quot;Standard Triangle Language&quot; and &quot;Standard Tessellation Language&quot;. This file format is supported by many other software packages; it is widely used for rapid prototyping, 3D printing and computer-aided manufacturing.[Adapted from Wikipedia]</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">STL format</skos:prefLabel>
     </owl:Class>
@@ -4781,6 +4799,28 @@ range of densities.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">absorbed dose rate estimated in a region of space delineated by a VOI on a 3D image at a timepoint</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">absorbed dose rate per VOI at timepoint</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#absorbed_dose_rate_unit -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#absorbed_dose_rate_unit">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000127"/>
+        <obo:IAO_0000115 xml:lang="en">A unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue per unit of time.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">absorbed dose rate unit</rdfs:label>
+        <skos:prefLabel xml:lang="en">absorbed dose rate unit</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#accumulated_decay_event_counts -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#accumulated_decay_event_counts">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <obo:IAO_0000115 xml:lang="en">a unit measuring a number of accumulated decay events</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">accumulated decay event counts</rdfs:label>
+        <skos:prefLabel xml:lang="en">accumulated decay event counts</skos:prefLabel>
     </owl:Class>
     
 
@@ -5028,6 +5068,17 @@ It is a physical task and is composed of a list of motions.
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#bi_exponential_integration_algorithm -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#bi_exponential_integration_algorithm">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#integration_algorithm"/>
+        <obo:IAO_0000115 xml:lang="en">integration algorithm based on two exponential functions</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">bi-exponential integration algorithm</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#body_mass_index -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#body_mass_index">
@@ -5184,6 +5235,19 @@ range of densities.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#camera_calibration_factor_unit -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#camera_calibration_factor_unit">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <obo:IAO_0000115 xml:lang="en">a unit measuring the ratio between the number of photons emitted by the source having the activity A and recorded by the camera in time t:
+ CF=C/A.t)
+[adapted from Zhao et al. EJNMMI Physics (2018) 5:8]</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">camera calibration factor unit</rdfs:label>
+        <skos:prefLabel xml:lang="en">camera calibration factor unit</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#carbon_fiber -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#carbon_fiber">
@@ -5302,6 +5366,17 @@ range of densities.</obo:IAO_0000115>
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#cone_beam_collimator">
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#collimator"/>
         <skos:prefLabel xml:lang="en">cone-beam collimator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#constant_incorporation_mode -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#constant_incorporation_mode">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#incorporation_mode"/>
+        <obo:IAO_0000115 xml:lang="en">incorporation mode based on a constant function</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">constant incorporation mode</skos:prefLabel>
     </owl:Class>
     
 
@@ -5461,6 +5536,17 @@ range of densities.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#accumulated_decay_event_counts"/>
+        <obo:IAO_0000115 xml:lang="en">accumulated decay event counts detected by some device, such as a gamma camera or a PET device</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">counts</rdfs:label>
+        <skos:prefLabel xml:lang="en">counts</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts_per_ROI_at_timepoint -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts_per_ROI_at_timepoint">
@@ -5503,6 +5589,17 @@ range of densities.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">scalar measurement datum representing the number of counts in some region of space delineated by a VOI in a SPECT image at some timepoint</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">counts per VOI at timepoint</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts_per_second_per_megabecquerel -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts_per_second_per_megabecquerel">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#camera_calibration_factor_unit"/>
+        <obo:IAO_0000115 xml:lang="en">a camera calibration unit of one count per second per megabecquerel</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">counts per second per megabecquerel</rdfs:label>
+        <skos:prefLabel xml:lang="en">counts per second per megabecquerel</skos:prefLabel>
     </owl:Class>
     
 
@@ -5557,6 +5654,17 @@ range of densities.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">measurement datum quantifying the area under a time activity curve, for a given Volume of Interest (VOI). It has the dimension of activity X time, e.g. microCi X hr or MBq X sec; also called time-integrated activity</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">cumulated activity per VOI</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#curve_fitting_method -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#curve_fitting_method">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <obo:IAO_0000115 xml:lang="en">method to construct a curve that has the best fit to a series of data points [adapted from Wikipedia]</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">curve fitting method</skos:prefLabel>
     </owl:Class>
     
 
@@ -5866,6 +5974,17 @@ range of densities.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#energy_deposition_rate_unit -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#energy_deposition_rate_unit">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <obo:IAO_0000115 xml:lang="en">a unit measuring the quantity of energy deposited in some material by unit of time</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">energy deposition rate unit</rdfs:label>
+        <skos:prefLabel xml:lang="en">energy deposition rate unit</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#energy_window -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#energy_window">
@@ -5909,6 +6028,17 @@ range of densities.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#exponential_incorporation_mode -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#exponential_incorporation_mode">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#incorporation_mode"/>
+        <obo:IAO_0000115 xml:lang="en">incorporation mode based on exponential function(s)</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">exponential incorporation mode</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#exposure -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#exposure">
@@ -5938,6 +6068,17 @@ range of densities.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#fitting_function -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#fitting_function">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#model"/>
+        <obo:IAO_0000115 xml:lang="en">model used to fit a curve that best fits a set a values</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">fitting function</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#focal_spot -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#focal_spot">
@@ -5954,6 +6095,17 @@ range of densities.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">an information content entity that specifies the principles to serialize the information items of a complex data set</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">format specification</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#gray_per_second -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#gray_per_second">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#absorbed_dose_rate_unit"/>
+        <obo:IAO_0000115 xml:lang="en">An absorbed dose rate unit equal to one gray per second.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">gray per second</rdfs:label>
+        <skos:prefLabel xml:lang="en">gray per second</skos:prefLabel>
     </owl:Class>
     
 
@@ -6224,6 +6376,17 @@ range of densities.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#incorporation_mode -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#incorporation_mode">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <obo:IAO_0000115 xml:lang="en">method specifying which kind of function is to be used for curve fitting</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">incorporation mode</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#individual_irradiation_event -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#individual_irradiation_event">
@@ -6279,6 +6442,17 @@ range of densities.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#organization"/>
         <obo:IAO_0000115 xml:lang="en">Organization where the data were created, i.e. where the equipment that produced the composite instances is located.</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">institution</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#integration_algorithm -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#integration_algorithm">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <obo:IAO_0000115 xml:lang="en">method specifying what kind of algorithm is used for curve fitting</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">integration algorithm</skos:prefLabel>
     </owl:Class>
     
 
@@ -6348,6 +6522,17 @@ range of densities.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#joule_per_second -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#joule_per_second">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#energy_deposition_rate_unit"/>
+        <obo:IAO_0000115 xml:lang="en">energy deposition rate unit of one joule in one second</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">joule per second</rdfs:label>
+        <skos:prefLabel xml:lang="en">joule per second</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#kilobecquerel -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#kilobecquerel">
@@ -6389,6 +6574,17 @@ range of densities.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#scalar_device_setting"/>
         <skos:definition xml:lang="en">a scalar device setting consisting in a length measurement of the area to be scanned</skos:definition>
         <skos:prefLabel xml:lang="en">length of scanned area</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#linear_incorporation_mode -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#linear_incorporation_mode">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#incorporation_mode"/>
+        <obo:IAO_0000115 xml:lang="en">incorporation mode based on linear function(s)</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">linear incorporation model</skos:prefLabel>
     </owl:Class>
     
 
@@ -6614,6 +6810,17 @@ Most of the time is electrical driven.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#megaelectronvolt_per_second -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#megaelectronvolt_per_second">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#energy_deposition_rate_unit"/>
+        <obo:IAO_0000115 xml:lang="en">energy deposition rate unit of one megaelectronvolt in one second</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">megaelectronvolt per second</rdfs:label>
+        <skos:prefLabel xml:lang="en">megaelectronvolt per second</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#metabolic_radiotherapy -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#metabolic_radiotherapy">
@@ -6657,6 +6864,17 @@ Most of the time is electrical driven.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000129"/>
         <rdfs:label xml:lang="en">milligray.centimeter</rdfs:label>
         <skos:prefLabel xml:lang="en">milligray.centimeter</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#milligray_per_second -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#milligray_per_second">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#absorbed_dose_rate_unit"/>
+        <obo:IAO_0000115 xml:lang="en">An absorbed dose rate unit equal to one milligray per second.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">milligray per second</rdfs:label>
+        <skos:prefLabel xml:lang="en">milligray per second</skos:prefLabel>
     </owl:Class>
     
 
@@ -6742,6 +6960,17 @@ Most of the time is electrical driven.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#mono_exponential_integration_algorithm -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#mono_exponential_integration_algorithm">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#integration_algorithm"/>
+        <obo:IAO_0000115 xml:lang="en">integration algorithm based on one exponential function</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">mono-exponential integration algorithm</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#multi_source_CT_scanner -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#multi_source_CT_scanner">
@@ -6807,6 +7036,17 @@ It can be, for instance, a mesh, a CAD model or a simulation of an inner organ.<
         <obo:IAO_0000115 xml:lang="en">an aggregate whose member parts have roles of specific types (for example in a jazz band, a chess club, a football team) [this definition comes from the BFO2 documentation].
 Another definition is given in OBI (OBI_0000245): An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">organization</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#other_integration_algorithm -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#other_integration_algorithm">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#integration_algorithm"/>
+        <obo:IAO_0000115 xml:lang="en">integration algorithm based on functions other than: trapezoid, mono-exponential, bi-exponential, tri-exponential, x-exponential</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">other integration algorithm</skos:prefLabel>
     </owl:Class>
     
 
@@ -7160,6 +7400,17 @@ event entry or plane-specific dose accumulations. There is a defined recording o
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiodensity_unit -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiodensity_unit">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <obo:IAO_0000115 xml:lang="en">a unit measuring radiodensity (or radiopacity), i.e. &quot;opacity to the radio wave and X-ray portion of the electromagnetic spectrum: that is, the relative inability of those kinds of electromagnetic radiation to pass through a particular material.&quot; [adapted from Wikipedia radiodensity]</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">radiodensity unit</rdfs:label>
+        <skos:prefLabel xml:lang="en">radiodensity unit</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiopharmaceutical_activity -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiopharmaceutical_activity">
@@ -7414,6 +7665,66 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#resampled_CT_image_dataset -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#resampled_CT_image_dataset">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_image_dataset"/>
+                    <rdf:Description rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#resampled_dataset"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_image_dataset"/>
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#resampled_dataset"/>
+        <obo:IAO_0000115 xml:lang="en">CT image dataset that is the result of the resampling of a CT image dataset, e.g. using a geometrical transformation estimated thanks to a registration onto some reference dataset</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">resampled CT image dataset</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#resampled_NM_recon_tomo_dataset -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#resampled_NM_recon_tomo_dataset">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#NM_recon_tomo_dataset"/>
+                    <rdf:Description rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#resampled_dataset"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#NM_recon_tomo_dataset"/>
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#resampled_dataset"/>
+        <obo:IAO_0000115 xml:lang="en">NM recon tomo dataset that is the result of the resampling of a NM recon tomo dataset, e.g. using a geometrical transformation estimated thanks to a registration onto some reference dataset</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">resampled NM recon tomo image dataset</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#resampled_PET_recon_tomo_dataset -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#resampled_PET_recon_tomo_dataset">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#PET_recon_tomo_dataset"/>
+                    <rdf:Description rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#resampled_dataset"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#PET_recon_tomo_dataset"/>
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#resampled_dataset"/>
+        <obo:IAO_0000115 xml:lang="en">PET recon tomo dataset that is the result of the resampling of a PET recon tomo dataset, e.g. using a geometrical transformation estimated thanks to a registration onto some reference dataset</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">resampled PET recon tomo image dataset</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#resampled_dataset -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#resampled_dataset">
@@ -7430,7 +7741,7 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">data set resulting from some resampling</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">data set resulting from some resampling, e.g. using a geometrical transformation estimated thanks to a registration onto some reference dataset</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">resampled dataset</skos:prefLabel>
     </owl:Class>
@@ -7933,6 +8244,12 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#time_integrated_activity_coefficient">
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#duration_description"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#is_about"/>
+                <owl:someValuesFrom rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#VOI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">duration description measuring the time a radiopharmaceutical spends in, e.g., an organ; also called: residence time</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">time-integrated activity coefficient</skos:prefLabel>
     </owl:Class>
@@ -8028,6 +8345,28 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#trapezoid_integration_algorithm -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#trapezoid_integration_algorithm">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#integration_algorithm"/>
+        <obo:IAO_0000115 xml:lang="en">integration algorithm based on a trapezoid function</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">trapezoid integration algorithm</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#tri_exponential_integration_algorithm -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#tri_exponential_integration_algorithm">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#integration_algorithm"/>
+        <obo:IAO_0000115 xml:lang="en">integration algorithm based on three exponential functions</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">tri-exponential integration algorithm</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#triple_energy_window_method -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#triple_energy_window_method">
@@ -8096,6 +8435,17 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#PET_data_acquisition"/>
         <obo:IAO_0000115 xml:lang="en">PET data acquisition in which the gantry has a wobble motion</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">wobble PET data acquisition</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#x_exponential_integration_algorithm -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#x_exponential_integration_algorithm">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#integration_algorithm"/>
+        <obo:IAO_0000115 xml:lang="en">integration algorithm based on x exponential functions with x &gt;3</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">x integration algorithm</skos:prefLabel>
     </owl:Class>
     
 
@@ -8990,6 +9340,14 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MPATH_603 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MPATH_603">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
@@ -9158,5 +9516,5 @@ Previous. An information content entity is a non-realizable information entity t
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
