@@ -20,7 +20,7 @@
      xmlns:uo_for_ontospm="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoSPM.owl#"
      xmlns:Radionuclides_for_OntoMEDIRAD="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#">
     <owl:Ontology rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl">
-        <owl:versionIRI rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl/1.3.7"/>
+        <owl:versionIRI rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl/1.3.8"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/radiopharmaceuticals.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/IAO_for_OntoSPM.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/MEDIRADClinicalResearchStudies.owl"/>
@@ -301,6 +301,18 @@ The design of OntoMEDIRAD aims at ensuring that experimental data collected duri
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_destination_coordinate_space_specified_by -->
+
+    <owl:ObjectProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_destination_coordinate_space_specified_by">
+        <rdfs:subPropertyOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#is_about"/>
+        <rdfs:domain rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#geometrical_transformation"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <obo:IAO_0000115 xml:lang="en">refers to the data set (usually a 3D image) whose coordinate space is the destination of this geometrical transformation</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">has destination coordinate space specified by</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_dose -->
 
     <owl:ObjectProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_dose">
@@ -438,6 +450,18 @@ The design of OntoMEDIRAD aims at ensuring that experimental data collected duri
     <owl:ObjectProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_sex">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000159"/>
         <skos:prefLabel xml:lang="en">has sex</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_source_coordinate_space_specified_by -->
+
+    <owl:ObjectProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_source_coordinate_space_specified_by">
+        <rdfs:subPropertyOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#is_about"/>
+        <rdfs:domain rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#geometrical_transformation"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <obo:IAO_0000115 xml:lang="en">refers to the data set (usually a 3D image) whose coordinate space is the source of this geometrical transformation</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">has source coordinate space specified by</skos:prefLabel>
     </owl:ObjectProperty>
     
 
@@ -3881,6 +3905,16 @@ Value 1: ORIGINAL/DERIVED/MIXED ; Value 2: PRIMARY/SECONDARY ; Value 3: a modali
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#B_spline_transformation -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#B_spline_transformation">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#geometrical_transformation"/>
+        <obo:IAO_0000115 xml:lang="en">a geometrical transformation allowing to specify a vectorial field of linear displacements, typically a list a vectors with B-spline interpolation in the field</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">B-spline transformation</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_Radiation_dose_SR -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_Radiation_dose_SR">
@@ -4226,6 +4260,17 @@ range of densities.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The Hounsfield unit (HU) scale is a linear transformation of the original linear attenuation coefficient measurement into one in which the radiodensity of distilled water at standard pressure and temperature (STP) is defined as zero Hounsfield units (HU), while the radiodensity of air at STP is defined as -1000 HU.  [adapted from Wikipedia Hounsfield scale]</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Hounsfield unit</rdfs:label>
         <skos:prefLabel xml:lang="en">Hounsfield unit</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#L3_L5_bone_marrow -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#L3_L5_bone_marrow">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9608"/>
+        <obo:IAO_0000115 xml:lang="en">bone marrow located in the L3 L4 and L5 lombar vertebrae</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">L3-L5 bone marrow</rdfs:label>
+        <skos:prefLabel xml:lang="en">L3-L5 bone marrow</skos:prefLabel>
     </owl:Class>
     
 
@@ -4935,6 +4980,16 @@ It is a physical task and is composed of a list of motions.
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#timepoint_description"/>
         <obo:IAO_0000115 xml:lang="en">description of the time interval between some reference event and an additional follow-up action (such as a SPECT image acquisition), additional meaning that it was not explicitly scheduled in the study protocol</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">additional timepoint</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#advanced_elastix_transformation -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#advanced_elastix_transformation">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#geometrical_transformation"/>
+        <obo:IAO_0000115 xml:lang="en">a geometrical transformation produced by the Elastix toolbox. (Elastix is an open source software, based on the well-known Insight Segmentation and Registration Toolkit (ITK). The software consists of a collection of algorithms that are commonly used to solve (medical) image registration problems.</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">advanced Elastix transformation</skos:prefLabel>
     </owl:Class>
     
 
@@ -6153,6 +6208,28 @@ range of densities.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#geometrical_transformation -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#geometrical_transformation">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_destination_coordinate_space_specified_by"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_source_coordinate_space_specified_by"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">a model specifying how to transform some 3D point from one source coordinate space to a destination coordinate space</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">geometrical transformation</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#gray_per_second -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#gray_per_second">
@@ -6639,6 +6716,16 @@ range of densities.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">incorporation mode based on linear function(s)</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">linear incorporation mode</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#linear_transformation_matrix -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#linear_transformation_matrix">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#geometrical_transformation"/>
+        <obo:IAO_0000115 xml:lang="en">a geometrical transformation that is linear and represented as a 4x4 matrix</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">linear transformation matrix</skos:prefLabel>
     </owl:Class>
     
 
@@ -7985,6 +8072,7 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#set_of_subdivisions_of_cardinal_body_parts">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_55652"/>
         <obo:IAO_0000115 xml:lang="en">Anatomical set made of subdivisions of cardinal body parts</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">set of subdivisions of cardinal body parts</rdfs:label>
         <skos:prefLabel xml:lang="en">set of subdivisions of cardinal body parts</skos:prefLabel>
     </owl:Class>
     
@@ -8045,6 +8133,17 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#slant_hole_collimator">
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#collimator"/>
         <skos:prefLabel xml:lang="en">slant-hole collimator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#soft_tissue -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#soft_tissue">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_67165"/>
+        <obo:IAO_0000115 xml:lang="en">a material anatomical entity exclusively made of soft tissue; this concept may be used to denote the remaining part of the body once you have excluded all tissue which is not soft tissue (predominantly bone and air), as well as specific organs made of soft tissue (such as kidneys, lungs, heart etc).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">soft tissue</rdfs:label>
+        <skos:prefLabel xml:lang="en">soft tissue</skos:prefLabel>
     </owl:Class>
     
 
