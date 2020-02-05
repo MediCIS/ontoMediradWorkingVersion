@@ -20,7 +20,7 @@
      xmlns:uo_for_ontospm="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoSPM.owl#"
      xmlns:Radionuclides_for_OntoMEDIRAD="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#">
     <owl:Ontology rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl">
-        <owl:versionIRI rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl/1.3.8"/>
+        <owl:versionIRI rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl/1.3.9"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/radiopharmaceuticals.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/IAO_for_OntoSPM.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/MEDIRADClinicalResearchStudies.owl"/>
@@ -4264,13 +4264,13 @@ range of densities.</obo:IAO_0000115>
     
 
 
-    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#L3_L5_bone_marrow -->
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#L2_L4_bone_marrow -->
 
-    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#L3_L5_bone_marrow">
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#L2_L4_bone_marrow">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9608"/>
-        <obo:IAO_0000115 xml:lang="en">bone marrow located in the L3 L4 and L5 lombar vertebrae</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">L3-L5 bone marrow</rdfs:label>
-        <skos:prefLabel xml:lang="en">L3-L5 bone marrow</skos:prefLabel>
+        <obo:IAO_0000115 xml:lang="en">bone marrow located in the L2 L3 and L4 lombar vertebrae</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">L2-L4 bone marrow</rdfs:label>
+        <skos:prefLabel xml:lang="en">L2-L4 bone marrow</skos:prefLabel>
     </owl:Class>
     
 
@@ -4874,6 +4874,18 @@ range of densities.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#absorbed_dose_rate_per_VOI_at_timepoint">
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#absorbed_dose_rate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#is_quantity_measured_at"/>
+                <owl:someValuesFrom rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#timepoint_description"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#is_quantity_measured_in"/>
+                <owl:someValuesFrom rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#VOI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">absorbed dose rate estimated in a region of space delineated by a VOI on a 3D image at a timepoint</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">absorbed dose rate per VOI at timepoint</skos:prefLabel>
@@ -6643,6 +6655,23 @@ range of densities.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#internal_radiotherapy -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#internal_radiotherapy">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#medical_procedure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#treats"/>
+                <owl:someValuesFrom rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#human"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">planned process aiming at treating a patient by internal radiotherapy, also called systemic radioisotope therapy</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">internal radiotherapy</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#irradiation_event -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#irradiation_event">
@@ -6945,9 +6974,9 @@ Most of the time is electrical driven.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#megabecquerel_hour">
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#time_integrated_activity_unit"/>
-        <obo:IAO_0000115 xml:lang="en">A time integrated activity unit of one megabecquerel during one second</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">megabecquerel.second</rdfs:label>
-        <skos:prefLabel xml:lang="en">megabecquerel.second</skos:prefLabel>
+        <obo:IAO_0000115 xml:lang="en">A time integrated activity unit of one megabecquerel during one hour</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">megabecquerel.hour</rdfs:label>
+        <skos:prefLabel xml:lang="en">megabecquerel.hour</skos:prefLabel>
     </owl:Class>
     
 
@@ -6956,9 +6985,9 @@ Most of the time is electrical driven.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#megabecquerel_second">
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#time_integrated_activity_unit"/>
-        <obo:IAO_0000115 xml:lang="en">A time integrated activity unit of one megabecquerel during one hour</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">megabecquerel.hour</rdfs:label>
-        <skos:prefLabel xml:lang="en">megabecquerel.hour</skos:prefLabel>
+        <obo:IAO_0000115 xml:lang="en">A time integrated activity unit of one megabecquerel during one second</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">megabecquerel.second</rdfs:label>
+        <skos:prefLabel xml:lang="en">megabecquerel.second</skos:prefLabel>
     </owl:Class>
     
 
@@ -6980,23 +7009,6 @@ Most of the time is electrical driven.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">energy deposition rate unit of one megaelectronvolt in one second</obo:IAO_0000115>
         <rdfs:label xml:lang="en">megaelectronvolt per second</rdfs:label>
         <skos:prefLabel xml:lang="en">megaelectronvolt per second</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#metabolic_radiotherapy -->
-
-    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#metabolic_radiotherapy">
-        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#medical_procedure"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#treats"/>
-                <owl:someValuesFrom rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#human"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">planned process aiming at treating a patient by metabolic radiotherapy, also called systemic radioisotope therapy</obo:IAO_0000115>
-        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
-        <skos:prefLabel xml:lang="en">metabolic radiotherapy</skos:prefLabel>
     </owl:Class>
     
 
@@ -7455,7 +7467,7 @@ Another definition is given in OBI (OBI_0000245): An entity that can bear roles,
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#post_RAIT_dosimetry_scanning_timepoint -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#post_RAIT_dosimetry_scanning_timepoint">
-        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#timepoint_of_metabolic_radiotherapy"/>
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#timepoint_of_internal_radiotherapy"/>
         <obo:IAO_0000115 xml:lang="en">timepoint associated to a dosimetry scanning consecutive to a radioactive iodine treatment (RAIT)</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">post-RAIT dosimetry scanning timepoint</skos:prefLabel>
     </owl:Class>
@@ -8463,18 +8475,18 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
     
 
 
-    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#timepoint_of_metabolic_radiotherapy -->
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#timepoint_of_internal_radiotherapy -->
 
-    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#timepoint_of_metabolic_radiotherapy">
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#timepoint_of_internal_radiotherapy">
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#timepoint_description"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#is_about_irradiation_event"/>
-                <owl:someValuesFrom rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#metabolic_radiotherapy"/>
+                <owl:someValuesFrom rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#internal_radiotherapy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">description of the time interval between the radiopharmaceutical administration and a follow-up action such as a SPECT image acquisition</obo:IAO_0000115>
-        <skos:prefLabel xml:lang="en">timepoint of metabolic radiotherapy</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">timepoint of internal radiotherapy</skos:prefLabel>
     </owl:Class>
     
 
@@ -8515,6 +8527,12 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#total_absorbed_dose_per_VOI">
         <rdfs:subClassOf rdf:resource="http://dicom.nema.org/resources/ontology/DCM/128533"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#is_quantity_measured_in"/>
+                <owl:someValuesFrom rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#VOI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">absorbed dose estimated in a region of space delineated by a VOI on a SPECT image (total refers to the integration of all timepoints)</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">total absorbed dose per VOI</skos:prefLabel>
