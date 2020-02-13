@@ -17,14 +17,16 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ontomedirad="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#"
      xmlns:ontomedirad1="http://medicis.univ-rennes1.fr/ontologies/ontospm/ontomedirad.owl#"
+     xmlns:SPARKLISlabels="http://medicis.univ-rennes1.fr/ontologies/ontospm/SPARKLISlabels.owl#"
      xmlns:uo_for_ontospm="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoSPM.owl#"
      xmlns:Radionuclides_for_OntoMEDIRAD="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#">
     <owl:Ontology rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl">
-        <owl:versionIRI rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl/1.3.9"/>
+        <owl:versionIRI rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl/1.3.10"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/radiopharmaceuticals.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/IAO_for_OntoSPM.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/MEDIRADClinicalResearchStudies.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl"/>
+        <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/SPARKLISlabels.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoMEDIRAD.owl"/>
         <owl:imports rdf:resource="http://ontofox.hegroup.org/FMA_for_OntoMEDIRAD.owl"/>
         <owl:imports rdf:resource="http://ontofox.hegroup.org/MPATH_for_OntoMEDIRAD.owl"/>
@@ -380,14 +382,6 @@ The design of OntoMEDIRAD aims at ensuring that experimental data collected duri
     <owl:ObjectProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_instrument_function_at_some_time">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000085"/>
         <skos:prefLabel xml:lang="en">has instrument function at some time</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_measure -->
-
-    <owl:ObjectProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_measure">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -762,7 +756,7 @@ The design of OntoMEDIRAD aims at ensuring that experimental data collected duri
     <owl:ObjectProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#is_device_setting_of">
         <rdfs:subPropertyOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#is_about"/>
         <rdfs:domain rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#device_setting"/>
-        <skos:note xml:lang="en">MEDIRAD: relates a device setting to the device or component of device concerned by this setting</skos:note>
+        <skos:note xml:lang="en">MEDIRAD: relates a device setting to the device or component of device, or method, concerned by this setting</skos:note>
         <skos:prefLabel xml:lang="en">is device setting of</skos:prefLabel>
     </owl:ObjectProperty>
     
@@ -1249,7 +1243,7 @@ The design of OntoMEDIRAD aims at ensuring that experimental data collected duri
 
     <owl:DatatypeProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_DICOM_frame_of_reference_UID">
         <rdfs:subPropertyOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_DICOM_UID"/>
-        <rdfs:label xml:lang="en">has DICOM frame of reference UID</rdfs:label>
+        <skos:prefLabel xml:lang="en">has DICOM frame of reference UID</skos:prefLabel>
     </owl:DatatypeProperty>
     
 
@@ -3947,6 +3941,7 @@ Accumulated values shall be kept for a whole Study or at least a part of a Study
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_acquisition_protocol">
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#image_acquisition_protocol"/>
+        <obo:IAO_0000115 xml:lang="en">image acquisition protocol that specifies various device settings to be used to perform a CT acquisition</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">CT acquisition protocol</skos:prefLabel>
     </owl:Class>
     
@@ -4331,7 +4326,6 @@ range of densities.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#Monte_Carlo_method">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
-        <owl:disjointWith rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiation_dose_estimate_parameters"/>
         <DICOM-CSD>MH</DICOM-CSD>
         <DICOM-code-meaning xml:lang="en">Monte Carlo Method</DICOM-code-meaning>
         <DICOM-code-value>D009010</DICOM-code-value>
@@ -4346,6 +4340,7 @@ range of densities.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#NM_acquisition_protocol">
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#image_acquisition_protocol"/>
+        <obo:IAO_0000115 xml:lang="en">image acquisition protocol that specifies various device settings to be used to perform a NM acquisition</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">NM acquisition protocol</skos:prefLabel>
     </owl:Class>
     
@@ -4472,6 +4467,7 @@ range of densities.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#PET_acquisition_protocol">
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#image_acquisition_protocol"/>
+        <obo:IAO_0000115 xml:lang="en">image acquisition protocol that specifies various device settings to be used to perform a PET acquisition</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">PET acquisition protocol</skos:prefLabel>
     </owl:Class>
     
@@ -5065,6 +5061,7 @@ It is a physical task and is composed of a list of motions.
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#algebraic_reconstruction_technique">
         <rdfs:subClassOf rdf:resource="http://dicom.nema.org/resources/ontology/DCM/113963"/>
+        <obo:IAO_0000115 xml:lang="en">iterative reconstruction method that solves a linear equation system: the main methods are ART, SIRT, ILST, conjugate gradient [adapted from Irène Buvat: Tomographic reconstruction: a guided tour (MAIA Master)]</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">algebraic reconstruction technique</skos:prefLabel>
     </owl:Class>
@@ -5122,6 +5119,7 @@ It is a physical task and is composed of a list of motions.
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#analytical_reconstruction_algorithm">
         <rdfs:subClassOf rdf:resource="http://dicom.nema.org/resources/ontology/DCM/113961"/>
+        <obo:IAO_0000115 xml:lang="en">reconstruction algorithm that consists in an analytical inversion of the Radon transform by expressing the tomographic reconstruction problem using a continuous formalism. The main analytical method is the Filtered Backprojection.  [adapted from Irène Buvat: Tomographic reconstruction: a guided tour (MAIA Master)]</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">analytical reconstruction algorithm</skos:prefLabel>
     </owl:Class>
@@ -5172,6 +5170,7 @@ It is a physical task and is composed of a list of motions.
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#bayesian_reconstruction_algorithm">
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#statistical_iterative_reconstruction_technique"/>
+        <obo:IAO_0000115 xml:lang="en">statistical iterative reconstruction technique that involves Bayesian estimate  [adapted from Irène Buvat: Tomographic reconstruction: a guided tour (MAIA Master)]</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">bayesian reconstruction algorithm</skos:prefLabel>
     </owl:Class>
@@ -5867,19 +5866,6 @@ range of densities.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#is_device_setting_of"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#component_of_medical_device"/>
-                            <rdf:Description rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#medical_device"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000004"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
@@ -6059,6 +6045,7 @@ range of densities.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#effective_dose_evaluation_method">
         <rdfs:subClassOf rdf:resource="http://dicom.nema.org/resources/ontology/DCM/128415"/>
+        <obo:IAO_0000115 xml:lang="en">radiation dose estimate methodology allowing to estimate effective doses in some biological material entity such as an organ, the whole body.</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">effective dose evaluation method</skos:prefLabel>
     </owl:Class>
     
@@ -6068,6 +6055,7 @@ range of densities.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#effective_scatter_source_estimation">
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#statistical_iterative_reconstruction_technique"/>
+        <obo:IAO_0000115 xml:lang="en">statistical iterative reconstruction technique that involves some effective scatter source estimation  [adapted from Irène Buvat: Tomographic reconstruction: a guided tour (MAIA Master)]</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">effective scatter source estimation</skos:prefLabel>
     </owl:Class>
@@ -6440,6 +6428,7 @@ range of densities.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#image_acquisition_protocol">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <obo:IAO_0000115 xml:lang="en">protocol that specifies the various device settings to be used to acquire the images</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">image acquisition protocol</skos:prefLabel>
     </owl:Class>
     
@@ -7536,14 +7525,6 @@ event entry or plane-specific dose accumulations. There is a defined recording o
     
 
 
-    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiation_dose_estimate_parameters -->
-
-    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiation_dose_estimate_parameters">
-        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#absorbed_dose_estimate_method"/>
-    </owl:Class>
-    
-
-
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiation_dose_estimation -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiation_dose_estimation">
@@ -7736,6 +7717,7 @@ at a given time is the quotient of dN by dt, where dN is the expectation value o
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#reconstruction_method_with_PSF_based_correction">
         <rdfs:subClassOf rdf:resource="http://dicom.nema.org/resources/ontology/DCM/113961"/>
+        <obo:IAO_0000115 xml:lang="en">reconstruction algorithm that includes a PSF-based correction.</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">reconstruction method with PSF-based correction</skos:prefLabel>
     </owl:Class>
@@ -7746,6 +7728,7 @@ at a given time is the quotient of dN by dt, where dN is the expectation value o
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#reconstruction_method_with_attenuation_correction">
         <rdfs:subClassOf rdf:resource="http://dicom.nema.org/resources/ontology/DCM/113961"/>
+        <obo:IAO_0000115 xml:lang="en">reconstruction algorithm that includes an attenuation correction.</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">reconstruction method with attenuation correction</skos:prefLabel>
     </owl:Class>
@@ -7756,6 +7739,7 @@ at a given time is the quotient of dN by dt, where dN is the expectation value o
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#reconstruction_method_with_filtering">
         <rdfs:subClassOf rdf:resource="http://dicom.nema.org/resources/ontology/DCM/113961"/>
+        <obo:IAO_0000115 xml:lang="en">reconstruction algorithm that includes a filtering.</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">reconstruction method with filtering</skos:prefLabel>
     </owl:Class>
@@ -7766,6 +7750,7 @@ at a given time is the quotient of dN by dt, where dN is the expectation value o
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#reconstruction_method_with_scatter_correction">
         <rdfs:subClassOf rdf:resource="http://dicom.nema.org/resources/ontology/DCM/113961"/>
+        <obo:IAO_0000115 xml:lang="en">reconstruction algorithm that includes a scatter correction.</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">reconstruction method with scatter correction</skos:prefLabel>
     </owl:Class>
@@ -7776,6 +7761,7 @@ at a given time is the quotient of dN by dt, where dN is the expectation value o
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#reconstruction_method_without_PSF_based_correction">
         <rdfs:subClassOf rdf:resource="http://dicom.nema.org/resources/ontology/DCM/113961"/>
+        <obo:IAO_0000115 xml:lang="en">reconstruction algorithm that does not include a PSF-based correction.</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">reconstruction method without PSF-based correction</skos:prefLabel>
     </owl:Class>
@@ -7786,6 +7772,7 @@ at a given time is the quotient of dN by dt, where dN is the expectation value o
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#reconstruction_method_without_attenuation_correction">
         <rdfs:subClassOf rdf:resource="http://dicom.nema.org/resources/ontology/DCM/113961"/>
+        <obo:IAO_0000115 xml:lang="en">reconstruction algorithm that does not include an attenuation correction.</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">reconstruction method without attenuation correction</skos:prefLabel>
     </owl:Class>
@@ -7796,6 +7783,7 @@ at a given time is the quotient of dN by dt, where dN is the expectation value o
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#reconstruction_method_without_scatter_correction">
         <rdfs:subClassOf rdf:resource="http://dicom.nema.org/resources/ontology/DCM/113961"/>
+        <obo:IAO_0000115 xml:lang="en">reconstruction algorithm that does not include a scatter correction.</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">reconstruction method without scatter correction</skos:prefLabel>
     </owl:Class>
@@ -8040,7 +8028,7 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#segmentation_dataset">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <obo:IAO_0000115 xml:lang="en">data set containing the result of a segmentation process applied to images. A dataset may contain VOIs that delineate each a particular anatomical physiological or pathological structure.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">data set containing the result of a segmentation process applied to images. A dataset may contain VOIs that delineate each particular anatomical physiological or pathological structure.</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">segmentation dataset</skos:prefLabel>
     </owl:Class>
@@ -8135,6 +8123,7 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#size_specific_dose_estimation_method_for_CT">
         <rdfs:subClassOf rdf:resource="http://dicom.nema.org/resources/ontology/DCM/128415"/>
+        <obo:IAO_0000115 xml:lang="en">radiation dose estimate methodology allowing to estimate size specific  doses in some biological material entity such as an organ, the whole body.</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">size specific dose estimation method for CT</skos:prefLabel>
     </owl:Class>
     
@@ -8253,6 +8242,7 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#statistical_iterative_reconstruction_technique">
         <rdfs:subClassOf rdf:resource="http://dicom.nema.org/resources/ontology/DCM/113963"/>
+        <obo:IAO_0000115 xml:lang="en">iterative reconstruction method that may involve Bayesian estimate and allow taking into account noise in the data (Poisson, Gaussian). Such method maximizes a likelihood function: the main methods are MLEM, OSEM, RAMLA, DRAMA [adapted from Irène Buvat: Tomographic reconstruction: a guided tour (MAIA Master)]</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">statistical iterative reconstruction technique</skos:prefLabel>
     </owl:Class>
@@ -8639,6 +8629,7 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#water_equivalent_diameter_method">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <obo:IAO_0000115 xml:lang="en">protocol allowing to calculate the patient water‐equivalent diameter (Dw), i.e. the diameter of a cylindrical volume of water with equivalent mean attenuation.</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">water equivalent diameter method</skos:prefLabel>
     </owl:Class>
     

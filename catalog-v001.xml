@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoMEDIRAD.owl" uri="UO_for_OntoMEDIRAD.owl"/>
+    <uri id="User Entered Import Resolution" name="http://medicis.univ-rennes1.fr/ontologies/ontospm/SPARKLISlabels.owl" uri="SPARKLISlabels.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1580903963697" name="http://medicis.univ-rennes1.fr/ontologies/ontospm/IAO_for_OntoSPM.owl" uri="IAO_for_OntoSPM.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580903963697" name="http://medicis.univ-rennes1.fr/ontologies/ontospm/MEDIRADClinicalResearchStudies.owl" uri="MEDIRADClinicalResearchStudies.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580903963697" name="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl" uri="ontoMedirad.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580903963697" name="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl" uri="Radionuclides_for_OntoMEDIRAD.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580903963697" name="http://medicis.univ-rennes1.fr/ontologies/radiopharmaceuticals.owl" uri="radiopharmaceuticals.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580903963697" name="http://ontofox.hegroup.org/CHEBI_for_OntoMEDIRAD.owl" uri="CHEBI_for_OntoMEDIRAD.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580903963697" name="http://ontofox.hegroup.org/FMA_for_OntoMEDIRAD.owl" uri="FMA_for_OntoMEDIRAD.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580903963697" name="http://ontofox.hegroup.org/MPATH_for_OntoMEDIRAD.owl" uri="MPATH_for_OntoMEDIRAD.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580903963697" name="http://ontofox.hegroup.org/PATO_for_OntoMEDIRAD.owl" uri="PATO_for_OntoMEDIRAD.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580903963697" name="http://ontofox.hegroup.org/UO_for_OntoMEDIRAD.owl" uri="UO_for_OntoMEDIRAD.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580903963697" name="http://purl.obolibrary.org/obo/bfo.owl" uri="bfo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580903963697" name="http://www.w3.org/2004/02/skos/core" uri="skos.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1581585552832" name="http://medicis.univ-rennes1.fr/ontologies/ontospm/IAO_for_OntoSPM.owl" uri="IAO_for_OntoSPM.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581585552832" name="http://medicis.univ-rennes1.fr/ontologies/ontospm/MEDIRADClinicalResearchStudies.owl" uri="MEDIRADClinicalResearchStudies.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581585552832" name="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl" uri="ontoMedirad.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581585552832" name="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl" uri="Radionuclides_for_OntoMEDIRAD.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581585552832" name="duplicate:http://medicis.univ-rennes1.fr/ontologies/ontospm/SPARKLISlabels.owl" uri="SPARKLISlabels.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581585552832" name="duplicate:http://medicis.univ-rennes1.fr/ontologies/ontospm/SPARKLISlabels.owl" uri="SPARKLISlabelsold.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581585552832" name="http://medicis.univ-rennes1.fr/ontologies/radiopharmaceuticals.owl" uri="radiopharmaceuticals.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581585552832" name="http://ontofox.hegroup.org/CHEBI_for_OntoMEDIRAD.owl" uri="CHEBI_for_OntoMEDIRAD.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581585552832" name="http://ontofox.hegroup.org/FMA_for_OntoMEDIRAD.owl" uri="FMA_for_OntoMEDIRAD.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581585552832" name="http://ontofox.hegroup.org/MPATH_for_OntoMEDIRAD.owl" uri="MPATH_for_OntoMEDIRAD.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581585552832" name="http://ontofox.hegroup.org/PATO_for_OntoMEDIRAD.owl" uri="PATO_for_OntoMEDIRAD.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581585552832" name="http://ontofox.hegroup.org/UO_for_OntoMEDIRAD.owl" uri="UO_for_OntoMEDIRAD.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581585552832" name="http://purl.obolibrary.org/obo/bfo.owl" uri="bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1581585552832" name="http://www.w3.org/2004/02/skos/core" uri="skos.rdf"/>
     </group>
 </catalog>
