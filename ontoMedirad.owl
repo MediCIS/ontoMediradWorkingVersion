@@ -21,7 +21,7 @@
      xmlns:uo_for_ontospm="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoSPM.owl#"
      xmlns:Radionuclides_for_OntoMEDIRAD="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#">
     <owl:Ontology rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl">
-        <owl:versionIRI rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl/1.3.10"/>
+        <owl:versionIRI rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl/1.3.11"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/radiopharmaceuticals.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/IAO_for_OntoSPM.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/MEDIRADClinicalResearchStudies.owl"/>
@@ -3909,6 +3909,56 @@ Value 1: ORIGINAL/DERIVED/MIXED ; Value 2: PRIMARY/SECONDARY ; Value 3: a modali
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CRF_WP3 -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CRF_WP3">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#case_report_form"/>
+        <obo:IAO_0000115 xml:lang="en">a case report form designed to collect data from clinical research studies carried out as part of MEDIRAD WP3</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">CRF WP3</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CRF_WP3_IUCT_version -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CRF_WP3_IUCT_version">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CRF_WP3"/>
+        <obo:IAO_0000115 xml:lang="en">a CRF WP3 tailored to specific needs of the Institut Universitaire du Cancer de Toulouse (IUCT)</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">CRF WP3 IUCT version</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CRF_WP3_RMH_version -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CRF_WP3_RMH_version">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CRF_WP3"/>
+        <obo:IAO_0000115 xml:lang="en">a CRF WP3 tailored to specific needs of the Royal Marsden Hospital London (RMH)</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">CRF WP3 RMH version</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CRF_WP3_UKW_version -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CRF_WP3_UKW_version">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CRF_WP3"/>
+        <obo:IAO_0000115 xml:lang="en">a CRF WP3 tailored to specific needs of the Universitätsklinikum Würzburg  (UKW)</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">CRF WP3 UKW version</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CRF_WP3_UMR_version -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CRF_WP3_UMR_version">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CRF_WP3"/>
+        <obo:IAO_0000115 xml:lang="en">a CRF WP3 tailored to specific needs of the University Marburg  (UMR)</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">CRF WP3 UMR version</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_Radiation_dose_SR -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_Radiation_dose_SR">
@@ -5368,6 +5418,16 @@ range of densities.</obo:IAO_0000115>
         <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256501007</snomed-SCTID>
         <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
         <skos:prefLabel xml:lang="en">carbon fiber</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#case_report_form -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#case_report_form">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000088"/>
+        <obo:IAO_0000115 xml:lang="en">a report specifically used in clinical trial research. The case report form is the tool used by the sponsor of the clinical trial to collect data from each participating patient.. [adapted from Wikipedia]</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">case report form</skos:prefLabel>
     </owl:Class>
     
 
