@@ -1541,6 +1541,15 @@
         <sparklisLabel xml:lang="en">notation</sparklisLabel>
     </owl:DatatypeProperty>
 
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_rank -->
+
+    <owl:DatatypeProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_rank">
+        <sparklisLabel xml:lang="en">rank</sparklisLabel>
+    </owl:DatatypeProperty>
+
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //

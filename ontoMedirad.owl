@@ -21,7 +21,7 @@
      xmlns:uo_for_ontospm="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoSPM.owl#"
      xmlns:Radionuclides_for_OntoMEDIRAD="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#">
     <owl:Ontology rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl">
-        <owl:versionIRI rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl/1.3.11"/>
+        <owl:versionIRI rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl/1.3.12"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/radiopharmaceuticals.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/IAO_for_OntoSPM.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/MEDIRADClinicalResearchStudies.owl"/>
@@ -1510,6 +1510,14 @@ Value 1: ORIGINAL/DERIVED/MIXED ; Value 2: PRIMARY/SECONDARY ; Value 3: a modali
         <rdfs:domain rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#accumulated_irradiation_event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <skos:prefLabel xml:lang="en">has number of irradiation events</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_rank -->
+
+    <owl:DatatypeProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_rank">
+        <skos:prefLabel xml:lang="en">has rank</skos:prefLabel>
     </owl:DatatypeProperty>
     
 
@@ -6462,6 +6470,16 @@ range of densities.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#hybrid_dosimetry_of_TRT -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#hybrid_dosimetry_of_TRT">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">process consisting in calculating absorbed doses in organs and tissues from both planar scintigraphic data and one single SPECT dataset recorded at several timepoints; this process includes many actions for segmenting the VOIs, registering NM and CT data, and performing the time-integration. This process is documented in the hybrid-dosimetry workflow.</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">hybrid dosimetry of TRT</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#image_acquisition -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#image_acquisition">
@@ -6714,7 +6732,7 @@ range of densities.</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#human"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">planned process aiming at treating a patient by internal radiotherapy, also called systemic radioisotope therapy</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">planned process aiming at treating a patient by internal radiotherapy, also called systemic radioisotope therapy or targeted radionuclide therapy (TRT)</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">internal radiotherapy</skos:prefLabel>
     </owl:Class>
@@ -8784,12 +8802,52 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#2D_dosimetry_of_TRT -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#2D_dosimetry_of_TRT">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">process consisting in calculating absorbed doses in organs and tissues from planar scintigraphic data recorded at several timepoints; this process includes many actions for segmenting the VOIs, registering NM and CT data, and performing the time-integration. This process is documented in the 2D-dosimetry workflow.</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">2D dosimetry of TRT</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#24h_plus_or_minus_4h_post_RAIT_timepoint -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#24h_plus_or_minus_4h_post_RAIT_timepoint">
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#post_RAIT_dosimetry_scanning_timepoint"/>
         <obo:IAO_0000115 xml:lang="en">post-RAIT dosimetry scanning timepoint performed 24h plus or minus 4h after the radiopharmaceutical administration</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">24h plus or minus 4h post-RAIT timepoint</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#3D_dosimetry_of_CT -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#3D_dosimetry_of_CT">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">process consisting in calculating absorbed doses in organs and tissues from CT data. This process is documented in the 3D-CT-dosimetry workflow (WP2subtask212Workflow).</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">3D dosimetry of CT</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#3D_dosimetry_of_TRT_using_time_integration_on_absorbed_dose_rates -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#3D_dosimetry_of_TRT_using_time_integration_on_absorbed_dose_rates">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">process consisting in calculating absorbed doses in organs and tissues from 3D SPECT data recorded at several timepoints; this process includes many actions for segmenting the VOIs, registering NM and CT data, and performing the time-integration on absorbed dose rates. This process is documented in the 3D-dosimetry-slide2 workflow.</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">3D dosimetry of TRT using time integration on absorbed dose rates</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#3D_dosimetry_of_TRT_using_time_integration_on_activity -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#3D_dosimetry_of_TRT_using_time_integration_on_activity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">process consisting in calculating absorbed doses in organs and tissues from 3D SPECT data recorded at several timepoints; this process includes many actions for segmenting the VOIs, registering NM and CT data, and performing the time-integration on activity. This process is documented in the 3D-dosimetry-slide1 workflow.</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">3D dosimetry of TRT using time integration on activity</skos:prefLabel>
     </owl:Class>
     
 
