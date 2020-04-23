@@ -303,7 +303,7 @@
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#is_about_procedure -->
 
     <owl:ObjectProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#is_about_procedure">
-        <sparklisLabel xml:lang="en">at time of procedure</sparklisLabel>
+        <sparklisLabel xml:lang="en">procedure</sparklisLabel>
     </owl:ObjectProperty>
     
 
