@@ -43,6 +43,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <sparklisLabel xml:lang="en">definition</sparklisLabel>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <sparklisLabel xml:lang="en">imported from</sparklisLabel>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
@@ -1455,6 +1471,14 @@
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_rank -->
+
+    <owl:DatatypeProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_rank">
+        <sparklisLabel xml:lang="en">rank</sparklisLabel>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_title -->
 
     <owl:DatatypeProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_title">
@@ -1527,6 +1551,14 @@
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/SPARKLISlabels.owl#has_reference_calibration_date -->
+
+    <owl:DatatypeProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/SPARKLISlabels.owl#has_reference_calibration_date">
+        <sparklisLabel xml:lang="en">calibration date</sparklisLabel>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000004 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000004">
@@ -1540,37 +1572,6 @@
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation">
         <sparklisLabel xml:lang="en">notation</sparklisLabel>
     </owl:DatatypeProperty>
-
-
-    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_rank -->
-
-    <owl:DatatypeProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_rank">
-        <sparklisLabel xml:lang="en">rank</sparklisLabel>
-    </owl:DatatypeProperty>
-
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <sparklisLabel xml:lang="en">definition</sparklisLabel>
-    </owl:AnnotationProperty>
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <sparklisLabel xml:lang="en">imported from</sparklisLabel>
-    </owl:AnnotationProperty>
-
 </rdf:RDF>
 
 

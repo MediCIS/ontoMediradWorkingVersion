@@ -21,7 +21,7 @@
      xmlns:uo_for_ontospm="http://medicis.univ-rennes1.fr/ontologies/ontospm/UO_for_OntoSPM.owl#"
      xmlns:Radionuclides_for_OntoMEDIRAD="http://medicis.univ-rennes1.fr/ontologies/ontospm/Radionuclides_for_OntoMEDIRAD.owl#">
     <owl:Ontology rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl">
-        <owl:versionIRI rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl/1.3.14"/>
+        <owl:versionIRI rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl/1.3.15"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/radiopharmaceuticals.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/IAO_for_OntoSPM.owl"/>
         <owl:imports rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/MEDIRADClinicalResearchStudies.owl"/>
@@ -1516,6 +1516,15 @@ Value 1: ORIGINAL/DERIVED/MIXED ; Value 2: PRIMARY/SECONDARY ; Value 3: a modali
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_reference_calibration_date -->
+
+    <owl:DatatypeProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_reference_calibration_date">
+        <obo:IAO_0000115 xml:lang="en">specifies a calibration date that is used as a reference; applies to calibration  results such as calibration coefficients or CT Number Calibration Curves</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">has reference calibration date</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_title -->
 
     <owl:DatatypeProperty rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#has_title">
@@ -3006,7 +3015,7 @@ Value 1: ORIGINAL/DERIVED/MIXED ; Value 2: PRIMARY/SECONDARY ; Value 3: a modali
     <!-- http://dicom.nema.org/resources/ontology/DCM/123005 -->
 
     <owl:Class rdf:about="http://dicom.nema.org/resources/ontology/DCM/123005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#nominal_volume_measurement_datum"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#is_about"/>
@@ -3999,6 +4008,17 @@ Accumulated values shall be kept for a whole Study or at least a part of a Study
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_calibration -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_calibration">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">process consisting in several actions allowing to obtain quantitative data in CT, namely a CT number calibration curve.</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">CT calibration</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_image_dataset -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_image_dataset">
@@ -4057,9 +4077,14 @@ Accumulated values shall be kept for a whole Study or at least a part of a Study
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_number_calibration_curve -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_number_calibration_curve">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <obo:IAO_0000115 xml:lang="en">data set representing the CT number as a function of actual densities. This relationship is empirically obtained from CT images of a phantom that has several inserts of tissue-equivalent materials, covering a wide
-range of densities.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                <owl:someValuesFrom rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#element_of_CT_number_calibration_curve"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">model representing the CT number as a function of actual densities. This relationship is empirically obtained from CT images of a phantom that has several inserts of tissue-equivalent materials, covering a wide range of densities.</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">CT number calibration curve</skos:prefLabel>
     </owl:Class>
@@ -4089,6 +4114,17 @@ range of densities.</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">a medical imaging device that makes use of computer-processed combinations of many X-ray measurements taken from different angles to produce cross-sectional (tomographic) images (virtual &quot;slices&quot;) of specific areas of a scanned object</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">CT scanner</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_segmentation_in_SPECT_calibration -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_segmentation_in_SPECT_calibration">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#3D_image_segmentation"/>
+        <obo:IAO_0000115 xml:lang="en">3D image segmentation consisting in delineating volumes of interest on 3D CT images and 3D SPECT images to perform SPECT calibration; these VOIs correspond to the different inserts of the phantom used for the calibration.</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">CT segmentation in SPECT calibration</skos:prefLabel>
     </owl:Class>
     
 
@@ -4637,6 +4673,17 @@ range of densities.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#SPECT_CT_calibration -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#SPECT_CT_calibration">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">process consisting in several actions allowing to obtain quantitative data in SPECT, namely reconstruction of SPECT images of a calibration phantom, segmentation of CT and SPECT images, calculation of SPECT sensitivity and calculation of the SPECT recovery coefficient curve.</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">SPECT CT calibration</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#SPECT_calibration_coefficient -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#SPECT_calibration_coefficient">
@@ -4698,8 +4745,14 @@ range of densities.</obo:IAO_0000115>
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#SPECT_recovery_coefficient_curve -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#SPECT_recovery_coefficient_curve">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <obo:IAO_0000115 xml:lang="en">data set representing the recovery coefficient (defined as the ratio of the measured sphere activity to the true sphere activity) as a function of the volume of the spheres on the phantom; this curve is used to correct partial volume effect (PVE)</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                <owl:someValuesFrom rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#element_of_recovery_coefficient_curve"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">model representing the recovery coefficient (defined as the ratio of the measured sphere activity to the true sphere activity) as a function of the volume of the spheres on the phantom; this curve is used to correct partial volume effect (PVE)</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">SPECT recovery coefficient curve</skos:prefLabel>
     </owl:Class>
@@ -5728,10 +5781,21 @@ range of densities.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts_per_ROI -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts_per_ROI">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <obo:IAO_0000115 xml:lang="en">scalar measurement datum representing the number of counts in some region of space delineated by a ROI in a projection image</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">counts per ROI</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts_per_ROI_at_timepoint -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts_per_ROI_at_timepoint">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts_per_ROI"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#is_quantity_measured_at"/>
@@ -5744,9 +5808,20 @@ range of densities.</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#ROI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">scalar measurement datum representing the number of counts in some region of space delineated by a ROI in a projection image at some timepoint</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">number of counts in some region of space delineated by a ROI in a projection image at some timepoint</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">counts per ROI at timepoint</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts_per_VOI -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts_per_VOI">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <obo:IAO_0000115 xml:lang="en">scalar measurement datum representing the number of counts in some region of space delineated by a VOI in a SPECT image</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">counts per VOI</skos:prefLabel>
     </owl:Class>
     
 
@@ -5754,7 +5829,7 @@ range of densities.</obo:IAO_0000115>
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts_per_VOI_at_timepoint -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts_per_VOI_at_timepoint">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#counts_per_VOI"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#is_quantity_measured_at"/>
@@ -5767,7 +5842,7 @@ range of densities.</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#VOI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">scalar measurement datum representing the number of counts in some region of space delineated by a VOI in a SPECT image at some timepoint</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">number of counts in some region of space delineated by a VOI in a SPECT image at some timepoint</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">counts per VOI at timepoint</skos:prefLabel>
     </owl:Class>
@@ -6001,7 +6076,7 @@ range of densities.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#dosimetry_of_TRT">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115 xml:lang="en">process consisting in calculating absorbed doses in organs and tissues from 3D and/or planar scintigraphic data recorded at several timepoints; this process includes many actions for segmenting the VOIs, registering NM and CT data, and performing the time-integration.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">process consisting in calculating absorbed doses in organs and tissues in targeted radionuclide therapy (TRT). This calculation process involves 3D and/or planar scintigraphic data recorded at several timepoints; this process includes many actions for segmenting the VOIs, registering NM and CT data, and performing the time-integration.</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">dosimetry of TRT</skos:prefLabel>
     </owl:Class>
     
@@ -6140,6 +6215,40 @@ range of densities.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">statistical iterative reconstruction technique that involves some effective scatter source estimation  [adapted from Irène Buvat: Tomographic reconstruction: a guided tour (MAIA Master)]</obo:IAO_0000115>
         <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
         <skos:prefLabel xml:lang="en">effective scatter source estimation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#element_of_CT_number_calibration_curve -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#element_of_CT_number_calibration_curve">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+                <owl:someValuesFrom rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#CT_number_calibration_curve"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">model representing an element of a CT number calibration curve</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">element of CT number calibration curve</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#element_of_recovery_coefficient_curve -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#element_of_recovery_coefficient_curve">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+                <owl:someValuesFrom rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#SPECT_recovery_coefficient_curve"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">model representing an element of a SPECT recovery coefficient curve</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">element of SPECT recovery coefficient curve</skos:prefLabel>
     </owl:Class>
     
 
@@ -6532,6 +6641,27 @@ range of densities.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#device_participating_role"/>
         <obo:IAO_0000115 xml:lang="en">device participating role consisting at scanning a material entity (i.e. a patient or a phantom) to produce images</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">image acquisition role</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#image_derived_radiodensity_measurement_datum -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#image_derived_radiodensity_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiodensity_measurement_datum"/>
+        <obo:IAO_0000115 xml:lang="en">radiodensity measurement datum derived from an image (usually a CT image)</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">image derived radiodensity measurement datum</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#image_derived_volume_measurement_datum -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#image_derived_volume_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#volume_measurement_datum"/>
+        <obo:IAO_0000115 xml:lang="en">volume measurement datum obtained by a method involving the use of images</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">image derived volume measurement datum</skos:prefLabel>
     </owl:Class>
     
 
@@ -7262,6 +7392,27 @@ Most of the time is electrical driven.</obo:IAO_0000115>
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#nominal_radiodensity_measurement_datum -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#nominal_radiodensity_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiodensity_measurement_datum"/>
+        <obo:IAO_0000115 xml:lang="en">radiodensity measurement datum concerning a material</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">nominal radiodensity measurement datum</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#nominal_volume_measurement_datum -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#nominal_volume_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#volume_measurement_datum"/>
+        <obo:IAO_0000115 xml:lang="en">volume measurement datum obtained by some direct measuring method (i.e. not involving the use of images)</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">nominal volume measurement datum</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#non_DICOM_file -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#non_DICOM_file">
@@ -7648,6 +7799,17 @@ event entry or plane-specific dose accumulations. There is a defined recording o
     
 
 
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiodensity_measurement_datum -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiodensity_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <obo:IAO_0000115 xml:lang="en">scalar measurement datum quantifying the radiodensity of an object or material</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">radiodensity measurement datum</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiodensity_unit -->
 
     <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#radiodensity_unit">
@@ -7801,6 +7963,17 @@ at a given time is the quotient of dN by dt, where dN is the expectation value o
         <snomed-SCTID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">371886008</snomed-SCTID>
         <obo:IAO_0000412>SNOMED</obo:IAO_0000412>
         <skos:prefLabel xml:lang="en">range of upper measurement uncertainty</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#ratio_measured_activity_to_true_activity -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#ratio_measured_activity_to_true_activity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">measurement datum quantifying the ratio between a measured activity (though a VOI or ROI defined in an image) and the true activity</obo:IAO_0000115>
+        <skos:note xml:lang="en">MEDIRAD: used in WP3</skos:note>
+        <skos:prefLabel xml:lang="en">ratio measured activity to true activity</skos:prefLabel>
     </owl:Class>
     
 
@@ -8692,6 +8865,16 @@ These different steps may be implemented in various order.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://dicom.nema.org/resources/ontology/DCM/113842"/>
         <obo:IAO_0000115 xml:lang="en">this setting allows the tube current to be actively modulated during the scan to more efficiently apply radiation to the patient. This potentially saves dose because instead of using a fixed tube current optimized for the thickest part of the patient, the scanner will produce fewer x-ray photons in regions of lower attenuation [Mayo-Smith et al. 2014, Radiology]</obo:IAO_0000115>
         <skos:prefLabel xml:lang="en">use of X-ray modulation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#volume_measurement_datum -->
+
+    <owl:Class rdf:about="http://medicis.univ-rennes1.fr/ontologies/ontospm/OntoMEDIRAD.owl#volume_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <obo:IAO_0000115 xml:lang="en">scalar measurement datum quantifying the volume of an object</obo:IAO_0000115>
+        <skos:prefLabel xml:lang="en">volume measurement datum</skos:prefLabel>
     </owl:Class>
     
 
